@@ -128,11 +128,12 @@ canvas{
 }
 
 .panel h2 {
-  font-weight: 600;
+  font-weight: 900;
   font-size: .8em;
   margin-bottom: 16px;
   text-align: center;
   line-height: 1.3em;
+  color: red;
 }
 
 .panel ul li {
