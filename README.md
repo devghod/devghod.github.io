@@ -1,2 +1,5 @@
-# fakerxcode.github.io
-My details
+
+### Devghod
+###### ghodcode.github.io
+
+Software Engineer
