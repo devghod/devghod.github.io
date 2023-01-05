@@ -16,7 +16,7 @@ const IndexPage = () => (
       <section id='intro' className='my-24'>
         <div className='grid grid-cols-1 md:grid-cols-5'>
           <div className='col-span-1 md:col-span-2 justify-self-center mb-10 md:mb-0'>
-            <img className='w-100 aspect-square shadow-2xl rounded-full' src='https://picsum.photos/200/200?random=1' />
+            <img className='w-100 aspect-square shadow-2xl rounded-lg' src='https://picsum.photos/200/200?random=1' />
           </div>
           <div className='col-span-1 md:col-span-3 my-7 md:my-4 mx-10 md:mx-2'>
             <div className='text-sm mb-2 underline decoration-2 decoration-pink-500 font-semibold antialiased'>Hello, it's me</div>
@@ -87,7 +87,7 @@ const IndexPage = () => (
       <section id='projects' className='my-10'>
         <div className='text-center md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2'>Projects</div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 mx-10'>
-          <div className='border shadow hover:shadow-lg rounded-lg w-96'>
+          <div className='border shadow hover:shadow-lg rounded-lg w-96 justify-self-center md:justify-self-auto'>
             <a href='https://regulations.gov.ph/pbris/login?initial=true' target={'_blank'} >
               <Image
                 src={pbris}
@@ -106,7 +106,7 @@ const IndexPage = () => (
               </div>
             </a>
           </div>
-          <div className='border shadow hover:shadow-lg rounded-lg w-96'>
+          <div className='border shadow hover:shadow-lg rounded-lg w-96 justify-self-center md:justify-self-auto'>
             <a href='https://regulations.gov.ph/artemis/contact-us' target={'_blank'} >
               <Image
                 src={artemis}
@@ -126,7 +126,7 @@ const IndexPage = () => (
               </div>
             </a>
           </div>
-          <div className='border shadow hover:shadow-lg rounded-lg w-96'>
+          <div className='border shadow hover:shadow-lg rounded-lg w-96 justify-self-center md:justify-self-auto'>
             <a href='https://nxtform.com/' target={'_blank'} >
               <Image
                 src={nxtform}
@@ -146,7 +146,7 @@ const IndexPage = () => (
               </div>
             </a>
           </div>
-          <div className='border shadow hover:shadow-lg rounded-lg w-96'>
+          <div className='border shadow hover:shadow-lg rounded-lg w-96 justify-self-center md:justify-self-auto'>
             <a href='https://dentalfast.com.au/' target={'_blank'} >
               <Image
                 src={dentalfast}
@@ -166,7 +166,7 @@ const IndexPage = () => (
               </div>
             </a>
           </div>
-          <div className='border shadow hover:shadow-lg rounded-lg w-96'>
+          <div className='border shadow hover:shadow-lg rounded-lg w-96 justify-self-center md:justify-self-auto'>
             <a href='https://qrthis.io/' target={'_blank'} >
               <Image
                 src={qrthis}
@@ -186,7 +186,7 @@ const IndexPage = () => (
               </div>
             </a>
           </div>
-          <div className='border shadow hover:shadow-lg rounded-lg w-96'>
+          <div className='border shadow hover:shadow-lg rounded-lg w-96 justify-self-center md:justify-self-auto'>
             <a href='https://ro10.ched.gov.ph/' target={'_blank'} >
               <Image
                 src={ched10}
