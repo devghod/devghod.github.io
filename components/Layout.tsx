@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import nextjsLogo from '../public/nextjs-png.png'
 
 type Props = {
