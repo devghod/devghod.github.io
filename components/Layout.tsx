@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import nextjsLogo from '../public/nextjs-png.png'
 
 type Props = {
@@ -17,14 +17,18 @@ const Layout = ({ children, title = 'Devghod' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header className='container mx-auto my-3'>
-      <nav>
-        <a href="#me" className='text-slate-800 hover:text-red-500'>Home</a> | { }
-        <a href="#education" className='text-slate-800 hover:text-red-500'>Education</a> | { }
-        <a href="#skills" className='text-slate-800 hover:text-red-500'>Skills</a> | { }
-        <a href="#tools" className='text-slate-800 hover:text-red-500'>Tools</a> | { }
-        <a href="#experience" className='text-slate-800 hover:text-red-500'>Experience</a> | { }
-        <a href="#projects" className='text-slate-800 hover:text-red-500'>Projects</a> | { }
-        <a href="#contacts" className='text-slate-800 hover:text-red-500'>Contacts</a>
+      <nav className='mx-16 md:mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+          <div className='text-center md:text-left text-sm font-semibold text-slate-500'>
+            <p>gbtm.workspace@gmail.com</p>
+          </div>
+          <div className='text-center md:text-right'>
+            <a href="#profile" className='text-slate-800 hover:text-cyan-500'>Profile</a> | { }
+            <a href="#whaticando" className='text-slate-800 hover:text-cyan-500'>What I can do</a> | { }
+            <a href="#projects" className='text-slate-800 hover:text-cyan-500'>Projects</a> | { }
+            <a href="#contactme" className='text-slate-800 hover:text-cyan-500'>Contact Me</a> 
+          </div>
+        </div>
       </nav>
     </header>
     {children}
@@ -32,7 +36,7 @@ const Layout = ({ children, title = 'Devghod' }: Props) => (
       <p className='text-slate-400 text-xs my-5'>
         Created with ❤️ by { }
         <span className='font-semibold'>
-          GBTM { }
+          Devghod { }
           <Image 
             src={nextjsLogo} 
             className='inline-block' 
