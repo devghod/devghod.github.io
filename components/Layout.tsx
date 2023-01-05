@@ -1,30 +1,47 @@
 import React, { ReactNode } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
+import nextjsLogo from '../public/nextjs-png.png'
 
 type Props = {
   children?: ReactNode
-  title?: string
+  title?: string | null
 }
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
+const Layout = ({ children, title = 'Devghod' }: Props) => (
   <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
+      <meta name="author" content="Devghod" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
+    <header className='container mx-auto my-3'>
       <nav>
-        <Link href="/">Home</Link> | <Link href="/about">About</Link> |{' '}
-        <Link href="/users">Users List</Link> |{' '}
-        <a href="/api/users">Users API</a>
+        <a href="#me" className='text-slate-800 hover:text-red-500'>Home</a> | { }
+        <a href="#education" className='text-slate-800 hover:text-red-500'>Education</a> | { }
+        <a href="#skills" className='text-slate-800 hover:text-red-500'>Skills</a> | { }
+        <a href="#tools" className='text-slate-800 hover:text-red-500'>Tools</a> | { }
+        <a href="#experience" className='text-slate-800 hover:text-red-500'>Experience</a> | { }
+        <a href="#projects" className='text-slate-800 hover:text-red-500'>Projects</a> | { }
+        <a href="#contacts" className='text-slate-800 hover:text-red-500'>Contacts</a>
       </nav>
     </header>
     {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
+    <footer className='mx-auto text-center shadow-2xl border'>
+      <p className='text-slate-400 text-xs my-5'>
+        Created with ❤️ by { }
+        <span className='font-semibold'>
+          GBTM { }
+          <Image 
+            src={nextjsLogo} 
+            className='inline-block' 
+            height={30} 
+            width={30} 
+            alt='NextJS Logo'
+          />
+        </span>
+      </p>
     </footer>
   </div>
 )
