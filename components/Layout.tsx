@@ -25,6 +25,7 @@ const Layout = ({ children, title = 'Devghod' }: Props) => (
           <div className='text-center md:text-right'>
             <a href="#profile" className='text-slate-800 hover:text-cyan-500'>Profile</a> | { }
             <a href="#whaticando" className='text-slate-800 hover:text-cyan-500'>What I can do</a> | { }
+            <a href="#aboutme" className='text-slate-800 hover:text-cyan-500'>About Me</a> | { }
             <a href="#projects" className='text-slate-800 hover:text-cyan-500'>Projects</a> | { }
             <a href="#contactme" className='text-slate-800 hover:text-cyan-500'>Contact Me</a> 
           </div>
