@@ -23,7 +23,7 @@ const Layout = ({ children, title = 'Devghod' }: Props) => (
             <p className='text-xs md:text-sm'>gbtm.workspace@gmail.com</p>
           </div>
           <div className='text-center md:text-right text-xs md:text-sm'>
-            <a href="#profile" className='text-slate-800 hover:text-cyan-500'>Profile</a> | { }
+            <a href="#intro" className='text-slate-800 hover:text-cyan-500'>Intro</a> | { }
             <a href="#whaticando" className='text-slate-800 hover:text-cyan-500'>What I can do</a> | { }
             <a href="#aboutme" className='text-slate-800 hover:text-cyan-500'>About Me</a> | { }
             <a href="#projects" className='text-slate-800 hover:text-cyan-500'>Projects</a> | { }

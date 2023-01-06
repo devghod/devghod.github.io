@@ -28,7 +28,7 @@ const IndexPage = () => (
               <span className='hover:underline decoration-2 decoration-green-500'>Programmer</span> | { }
               <span className='hover:underline decoration-2 decoration-sky-500'>Player</span> 
             </div>
-            <div className='w-96 text-slate-600 text-sm antialiased'>
+            <div className='w-64 md:w-96 text-slate-600 text-sm antialiased'>
               AKA Ghod, I am a software engineer in the Philippines 🇵🇭. I build and maintain anything from web and mobile app. Feel free to say { }
               <a href="#contactme" className='text-slate-800 underline decoration-2 decoration-sky-500 font-bold hover:text-cyan-500'>Hi</a>.
             </div>
@@ -36,7 +36,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id='whaticando' className='my-10'>
+      <section id='whaticando' className='my-24'>
         <div className='text-center md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2'>What I can do</div>
         <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-8 mx-10'>
           <div className='bg-gray-100 rounded-lg p-4 justify-self-center md:justify-self-auto shadow'>
@@ -71,7 +71,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id='aboutme' className='my-10'>
+      <section id='aboutme' className='my-24'>
         <div className='text-center md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2'>About Me</div>
         <div className='grid grid-cols-1 md:grid-cols-2 mt-8 mx-10'>
           <div className='justify-self-center mb-4 md:mb-0 shadow'>
@@ -85,7 +85,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id='projects' className='my-10'>
+      <section id='projects' className='my-24'>
         <div className='text-center md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2'>Projects</div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 mx-10'>
           <div className='border shadow hover:shadow-lg rounded-lg w-96 justify-self-center md:justify-self-auto'>
@@ -210,7 +210,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id='contactme' className='my-10'>
+      <section id='contactme' className='my-24'>
         <div className='text-center md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2'>Contact Me</div>
         <div className='grid grid-cols-1 mt-8 mx-10 text-center mb-32 mt-20 text-sm text-slate-600 hover:text-slate-800'>
           <div>
