@@ -2,7 +2,7 @@
 
 > This my Github portfolio
 
-<sub>This site was created with NextJS</sub>
+<sub>This site was created with NextJS Typescript</sub>
 
 > My stack tools:
 - ReactJS
