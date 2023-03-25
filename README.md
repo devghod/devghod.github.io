@@ -4,6 +4,9 @@
 
 <sub>This site was created with NextJS Typescript</sub>
 
+> Current stack tools:
+- MEVN
+
 > My stack tools:
 - ReactJS
 - VueJS
