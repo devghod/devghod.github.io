@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(255, 255, 255) !important;
+  /* background-color: rgb(41, 41, 41) !important; */
+  background-color: #222831;
   font-family: SF Pro Display, SF Pro Icons, Work Sans, Arial, sans-serif;
   line-height: 1.1;
   letter-spacing: 0em;

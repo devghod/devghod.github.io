@@ -7,7 +7,7 @@ const Skill = () => {
   return (
     <>
     <section id='whaticando' className='my-24'>
-      <div className='text-center md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2'>What I can do</div>
+      <div className='text-center text-slate-300 md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2'>What I can do</div>
       <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-8 mx-10'>
         <div className='bg-gray-100 rounded-lg p-4 justify-self-center md:justify-self-auto shadow'>
           <div className='mb-4 w-80 max-w-max'>
