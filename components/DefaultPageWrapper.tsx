@@ -8,7 +8,7 @@ type Props = {
   title?: string | null
 }
 
-const DefaultPageWrapper = ({ children, title = 'Devghod' }: Props) => (
+const DefaultPageWrapper = ({ children, title = 'Devghod | Full Stack Developer' }: Props) => (
   <>
   <Suspense fallback={<LoadingPage />}>
     <Header title={ title } />

@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import nextjsLogo from '../public/nextjs-png.png'
+import { User as user } from '../utils/_data'
 
 const Footer = () => {
   
@@ -9,7 +8,7 @@ const Footer = () => {
       <p className='text-slate-400 text-xs my-5'>
         Created with ❤️ by { }
         <span className='font-semibold'>
-          devghod 
+          {user.devName} 
           {/* { }
           <Image 
             src={ nextjsLogo } 

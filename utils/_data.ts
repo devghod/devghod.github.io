@@ -12,6 +12,7 @@ import { UserType } from '../types/User.type';
 
 export const User: UserType = {
   id: 0,
+  devName: "devghod",
   first_name: "Ghodie Boy",
   middle_name: "Tyson",
   last_name: "Madrona",
@@ -55,8 +56,8 @@ export const User: UserType = {
       name: "Nathanhr ERP",
       url: "https://erp.nathanhr.com/",
       image: nathan,
-      stacks: [
-        "NuxtJS",
+      tools: [
+        "Nuxt",
         "Express",
         "Mongodb",
         "Node",
@@ -67,8 +68,8 @@ export const User: UserType = {
       name: "Nxtform",
       url: "https://nxtform.com",
       image: nxtform,
-      stacks: [
-        "NuxtJS",
+      tools: [
+        "Nuxt",
         "Laravel",
         "Vuex",
       ],
@@ -77,8 +78,8 @@ export const User: UserType = {
       name: "DentalFast",
       url: "https://dentalfast.com.au",
       image: dentalfast,
-      stacks: [
-        "ReactJS",
+      tools: [
+        "React",
         "Laravel",
         "Xstate,"
       ],
@@ -87,8 +88,8 @@ export const User: UserType = {
       name: "QRThis",
       url: "https://qrthis.io",
       image: qrthis,
-      stacks: [
-        "ReactJS",
+      tools: [
+        "React",
         "Laravel",
         "Redux,"
       ],
@@ -97,7 +98,7 @@ export const User: UserType = {
       name: "ARTEMIS",
       url: "https://regulations.gov.ph/artemis/contact-us",
       image: artemis,
-      stacks: [
+      tools: [
         "Angular",
         "Firebase",
         "Typescript",
@@ -107,7 +108,7 @@ export const User: UserType = {
       name: "PBRIS",
       url: "https://regulations.gov.ph/pbris/login?initial=true",
       image: pbris,
-      stacks: [
+      tools: [
         "Angular",
         "Firebase",
         "Typescript",
@@ -117,7 +118,106 @@ export const User: UserType = {
       name: "CHED 10 Website",
       url: "https://ro10.ched.gov.ph",
       image: ched10,
-      stacks: [
+      tools: [
+        "Wordpress",
+      ],
+    },
+  ],
+  feeds: [
+    {
+      name: "About Me",
+      professions: [
+        'Front End Developer',
+        'Associate Software Engineer',
+        'Programmer'
+      ],
+      url: "",
+      image: profilePic,
+      type: "info",
+      details: "I’m a full stack developer with over 4 years of experience building efficient and scalable applications, with a strong focus on frontend development. I’m passionate about optimizing performance and ensuring smooth user experiences, and I frequently use unit testing to maintain code quality and reliability. In my free time, I explore new tech tools to enhance my skills and improve the scalability of the systems I build. Being a developer can be challenging, so I take breaks by walking, snacking, or playing video games to recharge.",
+      tools: [],
+    },
+    {
+      name: "Nathanhr ERP",
+      url: "https://erp.nathanhr.com/",
+      image: nathan,
+      type: 'project',
+      details: '',
+      tools: [
+        "Nuxt",
+        "Express",
+        "Mongodb",
+        "Node",
+        "Vuex",
+      ],
+    },
+    {
+      name: "Nxtform",
+      url: "https://nxtform.com",
+      image: nxtform,
+      type: 'project',
+      details: '',
+      tools: [
+        "Nuxt",
+        "Laravel",
+        "Vuex",
+      ],
+    },
+    {
+      name: "DentalFast",
+      url: "https://dentalfast.com.au",
+      image: dentalfast,
+      type: 'project',
+      details: '',
+      tools: [
+        "React",
+        "Laravel",
+        "Xstate"
+      ],
+    },
+    {
+      name: "QRThis",
+      url: "https://qrthis.io",
+      image: qrthis,
+      type: 'project',
+      details: '',
+      tools: [
+        "React",
+        "Laravel",
+        "Redux"
+      ],
+    },
+    {
+      name: "ARTEMIS",
+      url: "https://regulations.gov.ph/artemis/contact-us",
+      image: artemis,
+      type: 'project',
+      details: '',
+      tools: [
+        "Angular",
+        "Firebase",
+        "Typescript",
+      ],
+    },
+    {
+      name: "PBRIS",
+      url: "https://regulations.gov.ph/pbris/login?initial=true",
+      image: pbris,
+      type: 'project',
+      details: '',
+      tools: [
+        "Angular",
+        "Firebase",
+        "Typescript",
+      ],
+    },
+    {
+      name: "CHED 10 Website",
+      url: "https://ro10.ched.gov.ph",
+      image: ched10,
+      type: 'project',
+      details: '',
+      tools: [
         "Wordpress",
       ],
     },

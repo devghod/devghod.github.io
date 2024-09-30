@@ -6,15 +6,17 @@ import Skill from '../components/Skill'
 import AboutMe from '../components/AboutMe'
 import Project from '../components/Project'
 import ContactMe from '../components/ContactMe'
+import DynamicList from '../components/DynamicList'
 
 const Index = () => {
 
   return (
     <DefaultPageWrapper>
       <Intro />
-      <Skill />
-      <AboutMe />
-      <Project />
+      {/* <Skill /> */}
+      {/* <AboutMe />
+      <Project /> */}
+      <DynamicList />
       <ContactMe />
     </DefaultPageWrapper>
   );

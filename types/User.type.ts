@@ -1,5 +1,6 @@
 export type UserType = {
   id: number
+  devName: string
   first_name: string
   middle_name: string
   last_name: string
@@ -11,4 +12,5 @@ export type UserType = {
   projects: object[]
   skills: string[]
   techStack: string[]
+  feeds: object[]
 }

@@ -4,10 +4,8 @@ import moment from 'moment';
 const AboutMe = () => {
 
   const loader = ({ src, width, quality }) => {
-    // return `https://s3.amazonaws.com/demo/image/${src}?w=${width}&q=${quality || 75}`
     return `https://picsum.photos/id/${src}/${width}/520`
   }
-  yearsOfExperience()
 
   return (
     <>
@@ -25,9 +23,7 @@ const AboutMe = () => {
           />
         </div>
         <div className='bg-gray-100 md:rounded-lg p-4 md:w-96 text-sm justify-self-center md:justify-self-auto shadow'>
-          I am a full stack developer with over {yearsOfExperience()} years of experience of building scalable applications. { } <br /><br />
-          I used my spare time exploring some new tech tools to improve my skills and I enjoy solving problems. Being a developer is very challenging, so the best way to cope up with this is to take a break and do some stuff like walk, take a snack and play video games.
-          I love to read manga in my past time and like to create one, but I don't have the proper tools and skills. 😂
+          I’m a full stack developer with over {yearsOfExperience()} years of experience building efficient and scalable applications, with a strong focus on frontend development. I’m passionate about optimizing performance and ensuring smooth user experiences, and I frequently use unit testing to maintain code quality and reliability. In my free time, I explore new tech tools to enhance my skills and improve the scalability of the systems I build. Being a developer can be challenging, so I take breaks by walking, snacking, or playing video games to recharge.
         </div>
       </div>
     </section>
