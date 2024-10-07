@@ -8,6 +8,8 @@ module.exports = {
   ],
   theme: {
     // colors: {
+      // 'sblue': '#355C7D',
+      
     //   'custgreen': {
     //     light: '#9EC8B9',
     //     DEFAULT: '#5C8374',

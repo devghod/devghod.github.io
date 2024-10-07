@@ -129,7 +129,7 @@ export const User: UserType = {
       professions: [
         'Front End Developer',
         'Associate Software Engineer',
-        'Programmer'
+        'Full Stack Developer'
       ],
       url: "",
       image: profilePic,
@@ -145,6 +145,7 @@ export const User: UserType = {
       details: '',
       tools: [
         "Nuxt",
+        "Vue",
         "Express",
         "Mongodb",
         "Node",
