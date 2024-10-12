@@ -6,12 +6,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
+    "build": "yarn lint:fix && next build",
     "start": "next start",
     "type-check": "tsc",
     "prettier": "prettier --write .",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
     "format": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "format:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
