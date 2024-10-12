@@ -1,7 +1,13 @@
 import Image from 'next/image'
-import { Center, useColorMode } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Link,
+  Text,
+  Center,
+  useColorMode,
+} from '@chakra-ui/react'
 import linkiden from '../public/linkedin-48.png'
-import { Box, Heading, Link, Text } from '@chakra-ui/react'
 
 const ContactMe = () => {
   const { colorMode } = useColorMode()
