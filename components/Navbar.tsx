@@ -17,7 +17,6 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './ThemeToggleButton'
 import { FaUserNinja } from 'react-icons/fa'
-import { User as user } from '../constant/_data'
 
 export type Navbar = {
   path?: any
@@ -82,10 +81,10 @@ const Navbar: React.FC<Navbar> = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/about" path={path}>
+            About Me
           </LinkItem>
-          <LinkItem href="/wallpapers" path={path}>
+          {/* <LinkItem href="/wallpapers" path={path}>
             Wallpapers
           </LinkItem>
           <LinkItem href="/posts" path={path}>
@@ -101,9 +100,8 @@ const Navbar: React.FC<Navbar> = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            {/* <IoLogoGithub /> */}
             Source
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} textAlign="end">
@@ -119,12 +117,12 @@ const Navbar: React.FC<Navbar> = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  About
+                  Intro
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
-                  Works
+                <MenuItem as={MenuLink} href="/about">
+                  About Me
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/wallpapers">
+                {/* <MenuItem as={MenuLink} href="/wallpapers">
                   Wallpapers
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/posts">
@@ -138,7 +136,7 @@ const Navbar: React.FC<Navbar> = props => {
                   href="https://github.com/craftzdog/craftzdog-homepage"
                 >
                   View Source
-                </MenuItem>
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>

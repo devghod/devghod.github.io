@@ -17,7 +17,10 @@ export const User: UserType = {
   middle_name: 'Tyson',
   last_name: 'Madrona',
   email: 'gbtm.workspace@gmail.com',
+  degree: 'IT',
   profession: 'Full Stack Developer',
+  primary_profession: 'Frontend Developer',
+  secondary_profession: 'Web Developer',
   address: {
     country: 'Philippines',
     province: 'Misamis Oriental',

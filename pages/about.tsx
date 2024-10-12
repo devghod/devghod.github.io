@@ -1,14 +1,24 @@
-import Link from 'next/link'
-import Layout from '../components/DefaultPageWrapper'
+import NextLink from 'next/link'
+import {
+  Box,
+  Heading,
+  Text,
+  Container,
+  Divider,
+  Button,
+} from '@chakra-ui/react'
 
 const AboutPage = () => (
-  <Layout title="Devghod | About">
-    <h1>About</h1>
-    <p>This is the about page</p>
-    <p>
-      <Link href="/">Go home</Link>
-    </p>
-  </Layout>
+  <Container>
+    <Heading as="h1">About page</Heading>
+    <Text>This is the about page.</Text>
+    <Divider my={6} />
+    <Box my={6}>
+      <Button as={NextLink} href="/" colorScheme="teal">
+        Return to home
+      </Button>
+    </Box>
+  </Container>
 )
 
 export default AboutPage

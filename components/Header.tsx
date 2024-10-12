@@ -9,7 +9,7 @@ const Header = props => {
   return (
     <Box as="main" pb={8}>
       <Head>
-        <title>{`${user.devName} | ${user.profession}`}</title>
+        <title>{`${user.devName} | ${user.secondary_profession}`}</title>
         <meta charSet="utf-8" />
         <meta name="author" content={user.devName} />
         <meta name="author" content={`${user.first_name} ${user.last_name}`} />

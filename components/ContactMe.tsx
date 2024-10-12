@@ -1,34 +1,56 @@
 import Image from 'next/image'
-
+import { useColorMode } from '@chakra-ui/react'
 import linkiden from '../public/linkedin-48.png'
+import { Box, Heading, Link, Text } from '@chakra-ui/react'
 
 const ContactMe = () => {
+  const { colorMode } = useColorMode()
+
   return (
-    <>
-      <section id="contactme" className="my-24">
-        <div className="text-center md:text-left mx-0 md:mx-5 border-l-0 md:border-l-4 pl-0 md:pl-2">
+    <section id="contactme">
+      <Box my={100}>
+        <Heading
+          size={'sm'}
+          textAlign={{ md: 'left', sm: 'center' }}
+          my={10}
+          borderLeft={{ md: '4px' }}
+          paddingLeft={{ md: '8px' }}
+          letterSpacing="wide"
+        >
           Contact Me
-        </div>
-        <div className="grid grid-cols-1 mt-8 mx-10 text-center mb-32 mt-20 text-sm text-slate-600 hover:text-slate-800">
-          <div>Philippines 🇵🇭</div>
-          <div>gbtm.workspace@gmail.com</div>
-          <div className="justify-self-center">
-            <a
-              href="https://www.linkedin.com/in/ghodie-madrona"
-              target="_blank"
-            >
-              <Image
-                src={linkiden}
-                className=""
-                height={24}
-                width={24}
-                alt="Linkedin"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-    </>
+        </Heading>
+        <Text
+          fontSize={'sm'}
+          textAlign={'center'}
+          textColor={colorMode === 'dark' ? 'gray.300' : 'gray.600'}
+        >
+          Philippines 🇵🇭
+        </Text>
+        <Text
+          fontSize={'sm'}
+          textAlign={'center'}
+          textColor={colorMode === 'dark' ? 'gray.300' : 'gray.600'}
+        >
+          gbtm.workspace@gmail.com
+        </Text>
+        <Box>
+          <Link
+            href="https://www.linkedin.com/in/ghodie-madrona"
+            isExternal
+            textAlign={'center'}
+            style={{ textAlign: '-webkit-center' }}
+          >
+            <Image
+              src={linkiden}
+              className=""
+              height={24}
+              width={24}
+              alt="Linkedin"
+            />
+          </Link>
+        </Box>
+      </Box>
+    </section>
   )
 }
 
