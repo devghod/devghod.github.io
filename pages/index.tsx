@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import DefaultPageWrapper from '../components/DefaultPageWrapper'
 
 import Intro from '../components/Intro'
@@ -9,17 +9,13 @@ import ContactMe from '../components/ContactMe'
 import DynamicList from '../components/DynamicList'
 
 const Index = () => {
-
   return (
-    <DefaultPageWrapper>
+    <>
       <Intro />
-      {/* <Skill /> */}
-      {/* <AboutMe />
-      <Project /> */}
       <DynamicList />
       <ContactMe />
-    </DefaultPageWrapper>
-  );
-}  
+    </>
+  )
+}
 
 export default Index

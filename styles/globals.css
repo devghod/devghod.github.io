@@ -9,7 +9,12 @@ body {
   /* background-color: #092635; */
   /* background-color: #182e40; */
   background-color: #ffffff;
-  font-family: SF Pro Display, SF Pro Icons, Work Sans, Arial, sans-serif;
+  font-family:
+    SF Pro Display,
+    SF Pro Icons,
+    Work Sans,
+    Arial,
+    sans-serif;
   line-height: 1.1;
   letter-spacing: 0em;
 }

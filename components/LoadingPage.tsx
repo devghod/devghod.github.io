@@ -1,5 +1,5 @@
 // components/LoadingPage.tsx
-import React from 'react';
+import React from 'react'
 
 const LoadingPage = () => {
   return (
@@ -10,7 +10,7 @@ const LoadingPage = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LoadingPage;
+export default LoadingPage
