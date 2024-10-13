@@ -13,10 +13,13 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+  Text,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { GiNinjaStar } from "react-icons/gi";
 import ThemeToggleButton from './ThemeToggleButton'
-import { FaUserNinja } from 'react-icons/fa'
+import { User as user } from '../constant/_data'
+import { motion } from 'framer-motion'
 
 export type Navbar = {
   path?: any
@@ -68,8 +71,25 @@ const Navbar: React.FC<Navbar> = props => {
         justifyItems="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <FaUserNinja />
+          <Heading
+            as="h1"
+            size="lg"
+            display={'contents'}
+            letterSpacing={'tighter'}
+          >
+            <motion.div
+              whileHover={{ scale: 1.2, rotate: 90 }}
+              whileTap={{
+                scale: 0.8,
+                rotate: -90,
+                borderRadius: "100%"
+              }}
+            >
+              <GiNinjaStar />
+            </motion.div>
+            <Text ml={1} fontSize={'md'} letterSpacing={'wide'}>
+              {user.first_name} {user.last_name}
+            </Text>
           </Heading>
         </Flex>
 
@@ -81,27 +101,12 @@ const Navbar: React.FC<Navbar> = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/" path={path}>
+            Introduction
+          </LinkItem>
           <LinkItem href="/about" path={path}>
             About Me
           </LinkItem>
-          {/* <LinkItem href="/wallpapers" path={path}>
-            Wallpapers
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
-          <LinkItem
-            target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            Source
-          </LinkItem> */}
         </Stack>
 
         <Box flex={1} textAlign="end">
@@ -117,7 +122,7 @@ const Navbar: React.FC<Navbar> = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  Intro
+                  Introduction
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/about">
                   About Me
