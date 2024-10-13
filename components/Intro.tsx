@@ -3,6 +3,7 @@ import linkiden from '../public/linkedin-48.png'
 import { User as user } from '../constant/_data'
 import { Box, Link, Text } from '@chakra-ui/react'
 import { useColorMode } from '@chakra-ui/react'
+import { Primary, Secondary, Tertiary } from '../components/Font.style'
 
 const Intro = () => {
   const { colorMode } = useColorMode()
@@ -22,9 +23,7 @@ const Intro = () => {
               />
             </div>
             <div className="col-span-1 md:col-span-3 my-7 md:my-4 mx-10 md:mx-2">
-              <div className="tracking-wide text-neutral-400 mb-2 font-bold text-4xl max-w-96 font-poppins">
-                {user.first_name} {user.last_name}
-              </div>
+              <Primary text={`${user.first_name} ${user.last_name}`} />
               <div className="tracking-wider text-slate-200 text-xs mb-6">
                 <span className="py-1 px-2 mr-1 rounded bg-pink-600">
                   {user.degree}
