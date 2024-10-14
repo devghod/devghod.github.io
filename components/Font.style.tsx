@@ -16,20 +16,31 @@ const Primary = ({ text }) => (
 )
 
 const Secondary = ({ text }) => (
-  <Text mb={2} mr={2} textColor={mode() === 'dark' ? 'gray.200' : 'gray.700'}>
+  <Text mb={2} mr={2} textColor={mode() === 'dark' ? 'gray.300' : 'gray.600'}>
     {text}
   </Text>
 )
 
 const Tertiary = ({ text }) => (
   <Text
-    as={'sup'}
+    fontSize={'sm'}
     mb={2}
     mr={2}
-    textColor={mode() === 'dark' ? 'gray.200' : 'gray.700'}
+    textColor={mode() === 'dark' ? 'gray.300' : 'gray.600'}
   >
     {text}
   </Text>
 )
 
-export { Primary, Secondary, Tertiary }
+const Quarternary = ({ text }) => (
+  <Text
+    as={'sup'}
+    mb={2}
+    mr={2}
+    textColor={mode() === 'dark' ? 'gray.300' : 'gray.600'}
+  >
+    {text}
+  </Text>
+)
+
+export { Primary, Secondary, Tertiary, Quarternary }

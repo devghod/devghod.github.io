@@ -17,10 +17,16 @@ export const User: UserType = {
   middle_name: 'Tyson',
   last_name: 'Madrona',
   email: 'gbtm.workspace@gmail.com',
-  degree: 'IT',
   profession: 'Full Stack Developer',
   primary_profession: 'Frontend Developer',
   secondary_profession: 'Web Developer',
+  education: {
+    college: 'University of Science and Technology of Southern Philippines',
+    year: '2019',
+    degree: 'Undergraduate',
+    course: 'Bachelor of Science in Information Technology',
+    short: 'BSIT',
+  },
   address: {
     country: 'Philippines',
     province: 'Misamis Oriental',
@@ -53,6 +59,46 @@ export const User: UserType = {
     'Laravel',
     'CSS',
     'Tailwind',
+  ],
+  experience: [
+    {
+      company: 'Nathan Digital',
+      short: '',
+      position: 'Front End Developer',
+      shortPosition: '',
+      dateStarted: '01-11-23',
+      dateEnded: '09-26-24',
+      description: `Designed and implemented intuitive UI/UX to create engaging user experiences and responsive web components.
+        Developed and integrated new features to enhance application functionality and improve user satisfaction.
+        Optimized code for performance and efficiency, ensuring a smooth and responsive application experience.
+        Refactored existing code to improve readability and maintainability, contributing to a more streamlined development process.
+      `,
+      type: 'Full-time',
+    },
+    {
+      company: 'Commission on Higher Education Regional Office 10',
+      short: 'CHED RO 10',
+      position: 'Project Technical Staff 3',
+      shortPosition: 'PTS 3',
+      dateStarted: '03-11-21',
+      dateEnded: '12-31-21',
+      description: `Managed the company network and provided assistance for various technical concerns to ensure operational efficiency.
+        Served as a WordPress implementor and maintainer for website management.
+        Developed small-scale applications using AppScript to enhance service delivery.
+      `,
+      type: 'Contract',
+    },
+    {
+      company: 'Fligno Softwware Philippines Inc.',
+      short: '',
+      position: 'Associate Software Engineer',
+      shortPosition: '',
+      dateStarted: '09-11-20',
+      dateEnded: '03-11-21',
+      description: `Create a highly responsive web application utilizing modern tools, such as the React library and Vue framework for the front end, and the PHP Laravel framework for the back end. For the front end, we implement state management to promote a more predictable data flow and improve collaboration among team members. For the back end, we embrace Test-Driven Development (TDD) to improve code quality and allow for early bug detection.
+      `,
+      type: 'Full-time',
+    },
   ],
   projects: [
     {

@@ -35,7 +35,7 @@ const fonts = {
   // heading: 'Poppins, serif',
   // body: "Open Sans",
   heading: 'Montserrat, serif',
-  body: "Open Sans",
+  body: 'Open Sans',
 }
 
 const colors = {

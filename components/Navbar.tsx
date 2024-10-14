@@ -13,10 +13,11 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+  useColorMode,
   Text,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { GiNinjaStar } from "react-icons/gi";
+import { GiNinjaStar } from 'react-icons/gi'
 import ThemeToggleButton from './ThemeToggleButton'
 import { User as user } from '../constant/_data'
 import { motion } from 'framer-motion'
@@ -51,6 +52,7 @@ const MenuLink = React.forwardRef((props: any, ref: any) => (
 
 const Navbar: React.FC<Navbar> = props => {
   const { path } = props
+  const { colorMode } = useColorMode()
 
   return (
     <Box
@@ -70,28 +72,37 @@ const Navbar: React.FC<Navbar> = props => {
         textAlign="end"
         justifyItems="space-between"
       >
-        <Flex align="center" mr={5}>
-          <Heading
-            as="h1"
-            size="lg"
-            display={'contents'}
-            letterSpacing={'tighter'}
-          >
-            <motion.div
-              whileHover={{ scale: 1.2, rotate: 90 }}
-              whileTap={{
-                scale: 0.8,
-                rotate: -90,
-                borderRadius: "100%"
-              }}
+        <Link
+          as={NextLink}
+          scroll={false}
+          href="/"
+          alignContent={'center'}
+          textColor={colorMode === 'dark' ? 'gray.100' : 'gray.900'}
+          style={{ textDecoration: 'none' }}
+        >
+          <Flex align="center" mr={5}>
+            <Heading
+              as="h1"
+              size="lg"
+              display={'contents'}
+              letterSpacing={'tighter'}
             >
-              <GiNinjaStar />
-            </motion.div>
-            <Text ml={1} fontSize={'md'} letterSpacing={'wide'}>
-              {user.first_name} {user.last_name}
-            </Text>
-          </Heading>
-        </Flex>
+              <motion.div
+                whileHover={{ scale: 1.2, rotate: 90 }}
+                whileTap={{
+                  scale: 0.8,
+                  rotate: -90,
+                  borderRadius: '100%',
+                }}
+              >
+                <GiNinjaStar />
+              </motion.div>
+              <Text ml={1} fontSize={'md'} letterSpacing={'wide'}>
+                {user.first_name} {user.last_name}
+              </Text>
+            </Heading>
+          </Flex>
+        </Link>
 
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -103,6 +114,9 @@ const Navbar: React.FC<Navbar> = props => {
         >
           <LinkItem href="/" path={path}>
             Introduction
+          </LinkItem>
+          <LinkItem href="/experience" path={path}>
+            Experience
           </LinkItem>
           <LinkItem href="/about" path={path}>
             About Me
@@ -123,6 +137,9 @@ const Navbar: React.FC<Navbar> = props => {
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
                   Introduction
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/experience">
+                  Experience
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/about">
                   About Me
