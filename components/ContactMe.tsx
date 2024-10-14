@@ -11,7 +11,8 @@ import linkiden from '../public/linkedin-48.png'
 
 const ContactMe = () => {
   const { colorMode } = useColorMode()
-
+var a 
+console.log('w')
   return (
     <section id="contactme">
       <Box my={100}>
