@@ -66,7 +66,11 @@ const CardComponent = (props: CardComponent) => {
           </Box>
           <Quarternary text={DateFormat(dateStarted, dateEnded)} />
           {description != '' && (
-            <Text fontSize={'sm'} py={2} color={'gray.100'}>
+            <Text
+              fontSize={'sm'}
+              py={2}
+              color={colorMode === 'dark' ? 'gray.100' : 'gray.900'}
+            >
               {description}
             </Text>
           )}
