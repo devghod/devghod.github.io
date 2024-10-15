@@ -46,7 +46,7 @@ const LinkItem = ({ href, path, target, children, ...props }: any) => {
         _hover={{
           bg: 'rgba(128, 0, 128, 0.4)',
           color: colorMode === 'dark' ? 'white' : 'black',
-          borderBottom: '2px solid #fff',
+          borderBottom: `2px solid ${activeColor}`,
         }}
         borderBottom={active ? `2px solid ${activeColor}` : undefined}
         color={active ? activeColor : inactiveColor}

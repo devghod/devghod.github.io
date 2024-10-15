@@ -20,7 +20,7 @@ const Project = () => {
         <Box>
           {user.feeds.map((data: any, idx: number) => {
             if (data.type.toLowerCase() != 'info') {
-              return <Box key={idx}>{data.name}</Box>
+              return <Box key={idx}>{}</Box>
             }
           })}
         </Box>
