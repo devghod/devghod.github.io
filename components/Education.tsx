@@ -2,10 +2,13 @@ import React from 'react'
 import { Box, Heading } from '@chakra-ui/react'
 import { User as user } from '../constant/_data'
 import { Secondary, Tertiary } from './Font.style'
+import { useColorMode } from '@chakra-ui/react'
 
 export type Education = {}
 
 const Education: React.FC<Education> = () => {
+  const { colorMode } = useColorMode()
+
   return (
     <section id='education'>
       <Box my={100}>
@@ -24,8 +27,9 @@ const Education: React.FC<Education> = () => {
             md: 10,
             sm: 0,
           }}
-          bgColor={'blackAlpha.200'}
+          bgColor={colorMode === 'dark' ? 'blackAlpha.500' : 'blackAlpha.100'}
           p={5}
+          borderRadius={'lg'}
         >
           <Secondary text={user.education.college} />
           <Tertiary

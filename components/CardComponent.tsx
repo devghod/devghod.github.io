@@ -33,7 +33,7 @@ const CardComponent = (props: CardComponent) => {
   return (
     <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: '0.5' }}>
       <Card
-        mb={3}
+        mb={5}
         width={{
           md: '70 rem',
         }}

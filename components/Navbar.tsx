@@ -27,22 +27,35 @@ export type Navbar = {
 }
 
 const LinkItem = ({ href, path, target, children, ...props }: any) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const active = path.asPath === href
+  const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
+  const activeColor = useColorModeValue('#000', '#fff')
+  const { colorMode } = useColorMode()
 
   return (
-    <Link
-      as={NextLink}
-      href={href}
-      scroll={false}
-      p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
-      target={target}
-      {...props}
-    >
-      {children}
-    </Link>
+    <motion.div whileHover={{ scale: 1.1 }}>
+      <Link
+        fontSize={'sm'}
+        fontWeight={active ? 'black' : 'normal'}
+        as={NextLink}
+        href={href}
+        scroll={false}
+        px={2}
+        py={1}
+        transition={'background 0.4 s ease-in-out'}
+        _hover={{
+          bg: 'rgba(128, 0, 128, 0.4)',
+          color: colorMode === 'dark' ? 'white' : 'black',
+          borderBottom: '2px solid #fff',
+        }}
+        borderBottom={active ? `2px solid ${activeColor}` : undefined}
+        color={active ? activeColor : inactiveColor}
+        target={target}
+        {...props}
+      >
+        {children}
+      </Link>
+    </motion.div>
   )
 }
 
@@ -100,8 +113,8 @@ const Navbar: React.FC<Navbar> = props => {
               >
                 <GiNinjaStar />
               </motion.div>
-              <Text ml={1} fontSize={'md'} letterSpacing={'wide'}>
-                {user.first_name} {user.last_name}
+              <Text ml={1} fontSize={'md'} letterSpacing={'widest'}>
+                {user.devName}
               </Text>
             </Heading>
           </Flex>
@@ -120,6 +133,9 @@ const Navbar: React.FC<Navbar> = props => {
           </LinkItem>
           <LinkItem href='/experience' path={path}>
             Experience
+          </LinkItem>
+          <LinkItem href='/project' path={path}>
+            Project
           </LinkItem>
           <LinkItem href='/about' path={path}>
             About Me
@@ -143,6 +159,9 @@ const Navbar: React.FC<Navbar> = props => {
                 </MenuItem>
                 <MenuItem as={MenuLink} href='/experience' text={'Experience'}>
                   Experience
+                </MenuItem>
+                <MenuItem as={MenuLink} href='/project' text={'Experience'}>
+                  Project
                 </MenuItem>
                 <MenuItem as={MenuLink} href='/about' text={'About Me'}>
                   About Me

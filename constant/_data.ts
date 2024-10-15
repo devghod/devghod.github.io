@@ -1,4 +1,4 @@
-import profilePic from '../public/web-app/code_ninja.jpg'
+import profilePic from '../public/Profile.jpg'
 import artemis from '../public/web-app/artemis.png'
 import pbris from '../public/web-app/pbris.png'
 import dentalfast from '../public/web-app/dentalfast.png'
