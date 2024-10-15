@@ -5,7 +5,7 @@ import { Secondary, Tertiary } from './Font.style'
 
 export type Education = {}
 
-const Education: React.FC<Education> = props => {
+const Education: React.FC<Education> = () => {
   return (
     <section id="education">
       <Box my={100}>

@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import linkiden from '../public/linkedin-48.png'
 import { User as user } from '../constant/_data'

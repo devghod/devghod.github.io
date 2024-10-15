@@ -1,8 +1,9 @@
+import React from 'react'
 import Image from 'next/image'
 import moment from 'moment'
 
 const AboutMe = () => {
-  const loader = ({ src, width, quality }) => {
+  const loader = ({ src, width }) => {
     return `https://picsum.photos/id/${src}/${width}/520`
   }
 

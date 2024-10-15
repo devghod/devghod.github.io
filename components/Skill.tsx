@@ -1,5 +1,5 @@
+import React from 'react'
 import Image from 'next/image'
-
 import coding from '../public/web-app/coding.jpg'
 
 const Skill = () => {
@@ -16,9 +16,9 @@ const Skill = () => {
                 Frontend Apps
               </div>
               <p className="text-xs md:text-sm antialiased text-gray-800">
-                Build web/mobile applications with the used of modern technology
+                {`Build web/mobile applications with the used of modern technology
                 such as SPA and UI friendly interface. I'm currenctly using
-                NUXTJS for Vue and I'm also familiar with ReactJS.
+                NUXTJS for Vue and I'm also familiar with ReactJS.`}
               </p>
             </div>
             <div className="mb-4 w-80 max-w-max">

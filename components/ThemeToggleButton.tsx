@@ -1,11 +1,11 @@
-import * as React from 'react'
+import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 export type ThemeToggleButton = {}
 
-const ThemeToggleButton: React.FC<ThemeToggleButton> = props => {
+const ThemeToggleButton: React.FC<ThemeToggleButton> = () => {
   const { toggleColorMode } = useColorMode()
 
   return (

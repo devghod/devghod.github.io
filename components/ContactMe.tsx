@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import {
   Box,
@@ -11,8 +12,6 @@ import linkiden from '../public/linkedin-48.png'
 
 const ContactMe = () => {
   const { colorMode } = useColorMode()
-var a 
-console.log('w')
   return (
     <section id="contactme">
       <Box my={100}>

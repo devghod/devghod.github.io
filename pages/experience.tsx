@@ -1,10 +1,9 @@
 import React from 'react'
 import { Box, Heading } from '@chakra-ui/react'
 import { User as user } from '../constant/_data'
-import moment from 'moment'
 import CardComponent from '../components/CardComponent'
 
-const Experience = props => {
+const Experience = () => {
   return (
     <section id="experience">
       <Box my={100}>

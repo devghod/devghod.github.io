@@ -4,7 +4,7 @@ import Chakra from '../components/Chakra'
 import Fonts from '../components/Fonts'
 import DefaultPageWrapper from '../components/DefaultPageWrapper'
 
-export default function MyApp({ Component, pageProps, router }) {
+export default function MyApp({ Component, pageProps, router }: any) {
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />

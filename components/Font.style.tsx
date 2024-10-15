@@ -1,9 +1,10 @@
+import React from 'react'
 import { Heading, Text } from '@chakra-ui/react'
 import { useColorMode } from '@chakra-ui/react'
 
 const mode = () => useColorMode().colorMode
 
-const Primary = ({ text }) => (
+const Primary = ({ text }: any) => (
   <Heading
     size={'3xl'}
     letterSpacing={'wide'}
@@ -15,13 +16,13 @@ const Primary = ({ text }) => (
   </Heading>
 )
 
-const Secondary = ({ text }) => (
+const Secondary = ({ text }: any) => (
   <Text mb={2} mr={2} textColor={mode() === 'dark' ? 'gray.300' : 'gray.600'}>
     {text}
   </Text>
 )
 
-const Tertiary = ({ text }) => (
+const Tertiary = ({ text }: any) => (
   <Text
     fontSize={'sm'}
     mb={2}
@@ -32,7 +33,7 @@ const Tertiary = ({ text }) => (
   </Text>
 )
 
-const Quarternary = ({ text }) => (
+const Quarternary = ({ text }: any) => (
   <Text
     as={'sup'}
     mb={2}

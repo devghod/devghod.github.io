@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import NextLink from 'next/link'
 import {
   Container,
@@ -49,6 +49,9 @@ const LinkItem = ({ href, path, target, children, ...props }: any) => {
 const MenuLink = React.forwardRef((props: any, ref: any) => (
   <Link ref={ref} as={NextLink} {...props} />
 ))
+
+// Fix Eslint issue for MenuLink displayname not assigned
+MenuLink.displayName = ''
 
 const Navbar: React.FC<Navbar> = props => {
   const { path } = props
@@ -135,30 +138,15 @@ const Navbar: React.FC<Navbar> = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/">
+                <MenuItem as={MenuLink} href="/" text={'Introduction'}>
                   Introduction
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/experience">
+                <MenuItem as={MenuLink} href="/experience" text={'Experience'}>
                   Experience
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/about">
+                <MenuItem as={MenuLink} href="/about" text={'About Me'}>
                   About Me
                 </MenuItem>
-                {/* <MenuItem as={MenuLink} href="/wallpapers">
-                  Wallpapers
-                </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
-                </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>

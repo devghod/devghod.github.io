@@ -1,9 +1,10 @@
+import React from 'react'
 import Head from 'next/head'
 import { User as user } from '../constant/_data'
 import Navbar from './Navbar'
 import { Box } from '@chakra-ui/react'
 
-const Header = props => {
+const Header = (props: any) => {
   const { router } = props
 
   return (

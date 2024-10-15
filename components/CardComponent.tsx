@@ -84,24 +84,13 @@ export default CardComponent
 
 const SetType = (data): any => {
   const type = data.toLowerCase()
-  let color = ''
-
-  switch (type) {
-    case 'full-time':
-      color = 'green'
-      break
-
-    case 'contract':
-      color = 'blue'
-      break
-
-    case 'part-time':
-      color = 'purple'
-      break
-
-    default:
-      break
-  }
+  const colorMap = {
+    'full-time': 'green',
+    'contract': 'blue',
+    'part-time': 'purple',
+  };
+  
+  let color = colorMap[type] || 'gray';  
 
   return (
     <Badge colorScheme={color} variant="solid">

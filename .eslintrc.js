@@ -5,16 +5,27 @@ module.exports = {
   },
   extends: 'plugin:react/recommended',
   parser: '@typescript-eslint/parser',
-  languageOptions: {
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
-      },
-      ecmaVersion: 12,
-      sourceType: 'module',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
 
   plugins: ['react', '@typescript-eslint'],
-  rules: {},
+  rules: {
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['jsx', 'global'],
+      },
+    ],
+    'indent': ['error', 2],
+    // 'linebreak-style': ['error', 'unix'], // Optional: enforce Unix line endings
+    // 'quotes': ['error', 'single'], // Optional: enforce single quotes
+    // 'semi': ['error', 'always'], // Optional: enforce semicolons
+    'no-console': 'warn',
+    'no-unused-vars': 'warn',
+  },
 }
