@@ -7,7 +7,7 @@ const Footer = () => {
   const year = moment().year()
 
   return (
-    <footer className="mx-auto text-center">
+    <footer className='mx-auto text-center'>
       <Box my={4}>
         <Text fontSize={'sm'} textColor={'gray.400'}>
           © {year} {user.first_name} {user.last_name}. All Rights Reserved.

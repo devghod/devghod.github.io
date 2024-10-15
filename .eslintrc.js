@@ -21,7 +21,7 @@ module.exports = {
         ignore: ['jsx', 'global'],
       },
     ],
-    'indent': ['error', 2],
+    indent: ['error', 2],
     // 'linebreak-style': ['error', 'unix'], // Optional: enforce Unix line endings
     // 'quotes': ['error', 'single'], // Optional: enforce single quotes
     // 'semi': ['error', 'always'], // Optional: enforce semicolons

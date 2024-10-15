@@ -78,7 +78,7 @@ export const User: UserType = {
     {
       company: 'Commission on Higher Education Regional Office 10',
       short: 'CHED RO 10',
-      position: 'Project Technical Staff 3',
+      position: 'Project Technical Staff 3 - Programmer',
       shortPosition: 'PTS 3',
       dateStarted: '03-11-21',
       dateEnded: '12-31-21',
@@ -96,6 +96,29 @@ export const User: UserType = {
       dateStarted: '09-11-20',
       dateEnded: '03-11-21',
       description: `Create a highly responsive web application utilizing modern tools, such as the React library and Vue framework for the front end, and the PHP Laravel framework for the back end. For the front end, we implement state management to promote a more predictable data flow and improve collaboration among team members. For the back end, we embrace Test-Driven Development (TDD) to improve code quality and allow for early bug detection.
+      `,
+      type: 'Full-time',
+    },
+    {
+      company: 'Anti-Red Tape Authority',
+      short: 'ARTA',
+      position: 'Project Development Officer 1 - IT Specialist',
+      shortPosition: 'PDO 1',
+      dateStarted: '10-01-20',
+      dateEnded: '12-31-20',
+      description: `Developed and maintained web applications, including PBRIS and ARTEMIS, utilizing Firebase and AngularJS to enhance functionality and user experience.
+      `,
+      type: 'Part-time',
+    },
+    {
+      company: 'Redlemon Digital Media',
+      short: '',
+      position: 'Junior System and Network Administrator',
+      shortPosition: '',
+      dateStarted: '07-01-19',
+      dateEnded: '05-31-20',
+      description: `Managed network connections and performed troubleshooting to resolve connectivity issues.
+Installed new software and provided assistance for various technical-related concerns to ensure smooth operation.
       `,
       type: 'Full-time',
     },

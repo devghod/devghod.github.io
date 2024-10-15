@@ -11,11 +11,11 @@ import {
 
 const AboutPage = () => (
   <Container>
-    <Heading as="h1">About page</Heading>
+    <Heading as='h1'>About page</Heading>
     <Text>This is the about page.</Text>
     <Divider my={6} />
     <Box my={6}>
-      <Button as={NextLink} href="/" colorScheme="teal">
+      <Button as={NextLink} href='/' colorScheme='teal'>
         Return to home
       </Button>
     </Box>

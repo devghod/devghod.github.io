@@ -13,7 +13,7 @@ import linkiden from '../public/linkedin-48.png'
 const ContactMe = () => {
   const { colorMode } = useColorMode()
   return (
-    <section id="contactme">
+    <section id='contactme'>
       <Box my={100}>
         <Heading
           size={'sm'}
@@ -21,7 +21,7 @@ const ContactMe = () => {
           my={10}
           borderLeft={{ md: '4px' }}
           paddingLeft={{ md: '8px' }}
-          letterSpacing="wide"
+          letterSpacing='wide'
         >
           Contact Me
         </Heading>
@@ -41,17 +41,17 @@ const ContactMe = () => {
         </Text>
         <Center>
           <Link
-            href="https://www.linkedin.com/in/ghodie-madrona"
+            href='https://www.linkedin.com/in/ghodie-madrona'
             isExternal
             textAlign={'center'}
             style={{ textAlign: 'center' }}
           >
             <Image
               src={linkiden}
-              className=""
+              className=''
               height={24}
               width={24}
-              alt="Linkedin"
+              alt='Linkedin'
             />
           </Link>
         </Center>

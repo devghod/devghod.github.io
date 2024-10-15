@@ -12,7 +12,7 @@ type Props = {
 const DefaultPageWrapper = ({ children, router }: Props) => (
   <Suspense fallback={<LoadingPage />}>
     <Header router={router} />
-    <Container maxW="container.md" pt={14}>
+    <Container maxW='container.md' pt={14}>
       {children}
       <Footer />
     </Container>

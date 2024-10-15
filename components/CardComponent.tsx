@@ -43,7 +43,7 @@ const CardComponent = (props: CardComponent) => {
         _hover={{
           boxShadow: '0px 0px 5px 1px violet',
         }}
-        transition="box-shadow 0.5s ease-in"
+        transition='box-shadow 0.5s ease-in'
       >
         <CardBody>
           <Text as={'b'} fontSize={'lg'}>
@@ -86,14 +86,14 @@ const SetType = (data): any => {
   const type = data.toLowerCase()
   const colorMap = {
     'full-time': 'green',
-    'contract': 'blue',
+    contract: 'blue',
     'part-time': 'purple',
-  };
-  
-  let color = colorMap[type] || 'gray';  
+  }
+
+  let color = colorMap[type] || 'gray'
 
   return (
-    <Badge colorScheme={color} variant="solid">
+    <Badge colorScheme={color} fontSize={'2xs'}>
       {data}
     </Badge>
   )

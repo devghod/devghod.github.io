@@ -5,7 +5,7 @@ import CardComponent from '../components/CardComponent'
 
 const Experience = () => {
   return (
-    <section id="experience">
+    <section id='experience'>
       <Box my={100}>
         <Heading
           size={'sm'}
@@ -13,7 +13,7 @@ const Experience = () => {
           my={10}
           borderLeft={{ md: '4px' }}
           paddingLeft={{ md: '8px' }}
-          letterSpacing="wide"
+          letterSpacing='wide'
         >
           Experience
         </Heading>

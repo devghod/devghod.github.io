@@ -7,7 +7,7 @@
   "semi": false,
   "useTabs": false,
   "bracketSameLine": false,
-  "jsxSingleQuote": false,
+  "jsxSingleQuote": true,
   "arrowParens": "avoid",
   "endOfLine": "lf"
 }

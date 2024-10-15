@@ -59,34 +59,34 @@ const Navbar: React.FC<Navbar> = props => {
 
   return (
     <Box
-      position="fixed"
-      as="nav"
-      w="100%"
+      position='fixed'
+      as='nav'
+      w='100%'
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
     >
       <Container
-        display="flex"
+        display='flex'
         p={2}
-        maxW="container.md"
-        flexWrap="wrap"
-        textAlign="end"
-        justifyItems="space-between"
+        maxW='container.md'
+        flexWrap='wrap'
+        textAlign='end'
+        justifyItems='space-between'
       >
         <Link
           as={NextLink}
           scroll={false}
-          href="/"
+          href='/'
           alignContent={'center'}
           textColor={colorMode === 'dark' ? 'gray.100' : 'gray.900'}
           style={{ textDecoration: 'none' }}
         >
-          <Flex align="center" mr={5}>
+          <Flex align='center' mr={5}>
             <Heading
-              as="h1"
-              size="lg"
+              as='h1'
+              size='lg'
               display={'contents'}
               letterSpacing={'tighter'}
             >
@@ -111,40 +111,40 @@ const Navbar: React.FC<Navbar> = props => {
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
-          alignItems="center"
+          alignItems='center'
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/" path={path}>
+          <LinkItem href='/' path={path}>
             Introduction
           </LinkItem>
-          <LinkItem href="/experience" path={path}>
+          <LinkItem href='/experience' path={path}>
             Experience
           </LinkItem>
-          <LinkItem href="/about" path={path}>
+          <LinkItem href='/about' path={path}>
             About Me
           </LinkItem>
         </Stack>
 
-        <Box flex={1} textAlign="end">
+        <Box flex={1} textAlign='end'>
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
+            <Menu isLazy id='navbar-menu'>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
+                variant='outline'
+                aria-label='Options'
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/" text={'Introduction'}>
+                <MenuItem as={MenuLink} href='/' text={'Introduction'}>
                   Introduction
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/experience" text={'Experience'}>
+                <MenuItem as={MenuLink} href='/experience' text={'Experience'}>
                   Experience
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/about" text={'About Me'}>
+                <MenuItem as={MenuLink} href='/about' text={'About Me'}>
                   About Me
                 </MenuItem>
               </MenuList>

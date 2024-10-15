@@ -7,7 +7,7 @@ export type Education = {}
 
 const Education: React.FC<Education> = () => {
   return (
-    <section id="education">
+    <section id='education'>
       <Box my={100}>
         <Heading
           size={'sm'}
@@ -15,7 +15,7 @@ const Education: React.FC<Education> = () => {
           my={10}
           borderLeft={{ md: '4px' }}
           paddingLeft={{ md: '8px' }}
-          letterSpacing="wide"
+          letterSpacing='wide'
         >
           Education
         </Heading>
