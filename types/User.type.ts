@@ -17,6 +17,16 @@ export type ExperienceType = {
   type: string
 }
 
+export type FeedType = {
+  name: string
+  professions?: string[]
+  url: string
+  image: any
+  type: string
+  details: string
+  tools: string[]
+}
+
 export type UserType = {
   id: number
   devName: string
@@ -34,6 +44,6 @@ export type UserType = {
   projects: object[]
   skills: string[]
   techStack: string[]
-  feeds: object[]
+  feeds: FeedType[]
   experience: ExperienceType[]
 }

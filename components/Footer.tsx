@@ -11,11 +11,11 @@ const Footer = () => {
 
   return (
     <footer className='mx-auto text-center'>
-      <Box my={4}>
+      <Box my={10}>
         <Text fontSize={'sm'} textColor={'gray.500'}>
           Powered by
         </Text>
-        <Text fontSize={'lg'} justifyContent='center' display={'flex'} my={2}>
+        <Text fontSize={'lg'} justifyContent='center' display={'flex'} my={5}>
           <RiNextjsFill />
           <IoLogoVercel />
           <SiChakraui />

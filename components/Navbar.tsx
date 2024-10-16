@@ -134,8 +134,8 @@ const Navbar: React.FC<Navbar> = props => {
           <LinkItem href='/experience' path={path}>
             Experience
           </LinkItem>
-          <LinkItem href='/project' path={path}>
-            Project
+          <LinkItem href='/projects' path={path}>
+            Projects
           </LinkItem>
           <LinkItem href='/about' path={path}>
             About Me
@@ -160,8 +160,8 @@ const Navbar: React.FC<Navbar> = props => {
                 <MenuItem as={MenuLink} href='/experience' text={'Experience'}>
                   Experience
                 </MenuItem>
-                <MenuItem as={MenuLink} href='/project' text={'Experience'}>
-                  Project
+                <MenuItem as={MenuLink} href='/projects' text={'Experience'}>
+                  Projects
                 </MenuItem>
                 <MenuItem as={MenuLink} href='/about' text={'About Me'}>
                   About Me

@@ -7,8 +7,15 @@ import nxtform from '../public/web-app/nxtform.png'
 import ched10 from '../public/web-app/ched10-website.png'
 import nathan from '../public/web-app/nathanhr.png'
 import linkiden from '../public/linkedin-48.png'
-
 import { UserType } from '../types/User.type'
+import moment from 'moment'
+
+const yearsExp = () => {
+  const startDate = moment('2019-07-01', ' YYYY-MM-DD')
+  const endDate = moment()
+
+  return endDate.diff(startDate, 'years')
+}
 
 export const User: UserType = {
   id: 0,
@@ -58,7 +65,20 @@ export const User: UserType = {
     'Node',
     'Laravel',
     'CSS',
+    'HTML',
+    'Php',
     'Tailwind',
+    'Jest',
+    'Mongoose',
+    'Express',
+    'Eslint',
+    'Prettier',
+    'Vuex',
+    'Redux',
+    'Xstate',
+    'Firebase',
+    'Mongodb',
+    'Git',
   ],
   experience: [
     {
@@ -178,8 +198,7 @@ Installed new software and provided assistance for various technical-related con
       url: '',
       image: profilePic,
       type: 'info',
-      details:
-        'I’m a full stack developer with over 4 years of experience building efficient and scalable applications, with a strong focus on frontend development. I’m passionate about optimizing performance and ensuring smooth user experiences, and I frequently use unit testing to maintain code quality and reliability. In my free time, I explore new tech tools to enhance my skills and improve the scalability of the systems I build. Being a developer can be challenging, so I take breaks by walking, snacking, or playing video games to recharge.',
+      details: `Hi, I\'m Ghodie Boy Madrona, an IT graduate from the Philippines, currently working as a web developer with ${yearsExp()} years of experience. My passion for programming started because I enjoy working remotely, solving logical challenges, and designing responsive, interactive user interfaces. I love exploring new technologies, which helps me continuously grow and improve my skills. This curiosity gives me an edge in building high-quality, efficient web applications.`,
       tools: [],
     },
     {
@@ -187,56 +206,71 @@ Installed new software and provided assistance for various technical-related con
       url: 'https://erp.nathanhr.com/',
       image: nathan,
       type: 'project',
-      details: '',
-      tools: ['Nuxt', 'Vue', 'Express', 'Mongodb', 'Node', 'Vuex'],
+      details:
+        'A responsive web app designed for managing employment and HR-related processes, including leave management, employee onboarding and offboarding, and payroll processing. The app streamlines key HR functions by providing a user-friendly interface that works seamlessly across both desktop and mobile devices.',
+      tools: [
+        'Nuxt',
+        'Vue',
+        'Express',
+        'Mongoose',
+        'Node',
+        'Vuex',
+        'Web Application',
+      ],
     },
     {
       name: 'Nxtform',
       url: 'https://nxtform.com',
       image: nxtform,
       type: 'project',
-      details: '',
-      tools: ['Nuxt', 'Laravel', 'Vuex'],
+      details:
+        'A responsive web app that manages tenant applications, tracks application progress, displays a list of available properties, and offers simple automation features with strong security.',
+      tools: ['Nuxt', 'Laravel', 'Vuex', 'Web Application'],
     },
     {
       name: 'DentalFast',
       url: 'https://dentalfast.com.au',
       image: dentalfast,
       type: 'project',
-      details: '',
-      tools: ['React', 'Laravel', 'Xstate'],
+      details:
+        'A responsive web app for delivering dental equipment that works seamlessly on both web and mobile devices.',
+      tools: ['React', 'Laravel', 'Xstate', 'Web Application'],
     },
     {
       name: 'QRThis',
       url: 'https://qrthis.io',
       image: qrthis,
       type: 'project',
-      details: '',
-      tools: ['React', 'Laravel', 'Redux'],
+      details:
+        'A web app for creating and customizing QR codes allows users to generate, modify, and download QR codes that encode different types of information. This app would give users the ability to design QR codes that reflect their personal or business needs, ensuring that their QR codes stand out visually or functionally. ',
+      tools: ['React', 'Laravel', 'Redux', 'Web Application'],
     },
     {
-      name: 'ARTEMIS',
+      name: 'Anti-Red Tape E-Management Information System (ARTEMIS)',
       url: 'https://regulations.gov.ph/artemis/contact-us',
       image: artemis,
       type: 'project',
-      details: '',
-      tools: ['Angular', 'Firebase', 'Typescript'],
+      details:
+        "A web app designed to manage and verify regulations related to the Citizen's Charter, ensuring compliance and transparency in public service delivery. The app helps government agencies and organizations streamline the process of tracking, managing, and validating regulations that govern the rights and services promised to citizens under the charter.",
+      tools: ['Angular', 'Firebase', 'Typescript', 'Web Application'],
     },
     {
-      name: 'PBRIS',
+      name: 'Philippine Business Regulations Information System (PBRIS)',
       url: 'https://regulations.gov.ph/pbris/login?initial=true',
       image: pbris,
       type: 'project',
-      details: '',
-      tools: ['Angular', 'Firebase', 'Typescript'],
+      details:
+        'A web app designed to display verified regulations to the public, ensuring transparency and easy access to important laws, guidelines, and policies. This app allows government agencies or regulatory bodies to showcase up-to-date, authenticated regulations in a user-friendly manner.',
+      tools: ['Angular', 'Firebase', 'Typescript', 'Web Application'],
     },
     {
-      name: 'CHED 10 Website',
+      name: 'Commission on Higher Education Regional Office 10 (CHED RO 10)',
       url: 'https://ro10.ched.gov.ph',
       image: ched10,
       type: 'project',
-      details: '',
-      tools: ['Wordpress'],
+      details:
+        'This is the official website for Commission on Higher Education Regional Office 10 (CHED RO 10)',
+      tools: ['Wordpress', 'Website'],
     },
   ],
 }

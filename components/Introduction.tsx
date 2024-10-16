@@ -16,7 +16,7 @@ const Intro = () => {
             <Image
               src={user.profile}
               priority
-              className='shadow-xl rounded-full'
+              className='shadow rounded-full'
               width={180}
               alt={`${user.first_name} ${user.last_name}`}
             />
@@ -95,7 +95,7 @@ const Intro = () => {
               >
                 <Box
                   p='5'
-                  color={colorMode === 'dark' ? 'gray.300' : 'gray.500'}
+                  color={colorMode === 'dark' ? 'gray.300' : 'gray.700'}
                   letterSpacing='wide'
                   fontSize='sm'
                 >
