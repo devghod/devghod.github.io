@@ -16,9 +16,15 @@ const Footer = () => {
           Powered by
         </Text>
         <Text fontSize={'lg'} justifyContent='center' display={'flex'} my={5}>
-          <RiNextjsFill />
-          <IoLogoVercel />
-          <SiChakraui />
+          <span className='mr-1'>
+            <RiNextjsFill />
+          </span>
+          <span className='mr-1'>
+            <IoLogoVercel />
+          </span>
+          <span className='mr-1'>
+            <SiChakraui />
+          </span>
         </Text>
       </Box>
       <Box my={4}>

@@ -17,6 +17,14 @@ export type ExperienceType = {
   type: string
 }
 
+export type TechType = {
+  name: string
+  // logo: React.ReactNode
+  // logo: typeof FaReact
+  // logo: JSX.Element
+  logo: any
+}
+
 export type FeedType = {
   name: string
   professions?: string[]
@@ -43,7 +51,7 @@ export type UserType = {
   secondary_profession: string
   projects: object[]
   skills: string[]
-  techStack: string[]
+  techStack: TechType[]
   feeds: FeedType[]
   experience: ExperienceType[]
 }

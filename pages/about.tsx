@@ -9,9 +9,11 @@ import {
   GridItem,
   SimpleGrid,
   useColorMode,
+  Flex,
 } from '@chakra-ui/react'
 import Ninja from '../public/web-app/code_ninja.jpg'
 import { User as user } from '../constant/_data'
+import { motion } from 'framer-motion'
 
 const AboutPage = () => {
   const aboutMe = user.feeds.filter(curr => curr.type === 'info')[0]
@@ -74,7 +76,25 @@ const AboutPage = () => {
               spacing={5}
             >
               {user.techStack.map((stack, idx) => (
-                <Text key={idx}>{stack}</Text>
+                <motion.div
+                  key={idx}
+                  whileHover={{ scale: 1.09 }}
+                  transition={{ duration: '0.5' }}
+                >
+                  <Box
+                    _hover={{ color: 'violet' }}
+                    transition='color 0.5s ease-in'
+                  >
+                    <Flex>
+                      <Center>
+                        {stack.logo != undefined && (
+                          <span className='mr-2'>{stack.logo()}</span>
+                        )}
+                        <Text>{stack.name}</Text>
+                      </Center>
+                    </Flex>
+                  </Box>
+                </motion.div>
               ))}
             </SimpleGrid>
           </Box>

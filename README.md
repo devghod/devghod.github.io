@@ -1,21 +1,27 @@
-## Devghod
+# Devghod Webiste
 
-> This my Github portfolio
+Welcome to my personal website, where you can explore my portfolio of work, projects, and professional experience. Here, you'll find a showcase of the web applications I've developed, the technologies I've mastered, and the solutions I've crafted. It’s a space where you can get to know my skills, see my latest projects in action, and learn more about my journey as a web developer.
 
-<sub>This site was created with NextJS Typescript</sub>
+## Project Structure
 
-> Current stack tools:
+```bash
+  $PROJECT_ROOT
+│   # Page files
+├── pages
+│   # React component files
+├── components
+│   # Non-react modules
+├── lib
+│   # Static files for images and 3d model file
+├──types
+│   # Type files
+├──styles
+│   # Style files
+├──constant
+│   # Constant files
+└── public
+```
 
-- MEVN
+## Demo
 
-> My stack tools:
-
-- ReactJS
-- VueJS
-- Django
-- Laravel
-
-> I'm familiar with
-
-- Angular
-- Google Appscripts
+https://devghod.vercel.app/
