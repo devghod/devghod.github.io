@@ -78,7 +78,12 @@ const AboutPage = () => {
               {user.techStack.map((stack, idx) => (
                 <motion.div
                   key={idx}
-                  whileHover={{ scale: 1.09 }}
+                  whileHover={{
+                    scale: 1.09,
+                    boxShadow: '0px 0px 3px 1px rgba(255,255,255,1)',
+                    backgroundColor: 'rgba(41,41,41,0.8)',
+                    padding: '1px 6px 1px 6px',
+                  }}
                   transition={{ duration: '0.5' }}
                 >
                   <Box

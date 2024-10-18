@@ -69,6 +69,7 @@ MenuLink.displayName = ''
 const Navbar: React.FC<Navbar> = props => {
   const { path } = props
   const { colorMode } = useColorMode()
+  const activeColor = useColorModeValue('#383838', '#cbcbcb')
 
   return (
     <Box
@@ -154,16 +155,46 @@ const Navbar: React.FC<Navbar> = props => {
                 aria-label='Options'
               />
               <MenuList>
-                <MenuItem as={MenuLink} href='/' text={'Introduction'}>
+                <MenuItem
+                  as={MenuLink}
+                  href='/'
+                  text={'Introduction'}
+                  textDecoration={
+                    isCurrentHref(path.asPath, '/')
+                      ? 'underline'
+                      : ''
+                  }
+                >
                   Introduction
                 </MenuItem>
-                <MenuItem as={MenuLink} href='/experience' text={'Experience'}>
+                <MenuItem
+                  as={MenuLink}
+                  href='/experience'
+                  text={'Experience'}
+                  textDecoration={
+                    isCurrentHref(path.asPath, '/experience') ? 'underline' : ''
+                  }
+                >
                   Experience
                 </MenuItem>
-                <MenuItem as={MenuLink} href='/projects' text={'Experience'}>
+                <MenuItem
+                  as={MenuLink}
+                  href='/projects'
+                  text={'Experience'}
+                  textDecoration={
+                    isCurrentHref(path.asPath, '/projects') ? 'underline' : ''
+                  }
+                >
                   Projects
                 </MenuItem>
-                <MenuItem as={MenuLink} href='/about' text={'About Me'}>
+                <MenuItem
+                  as={MenuLink}
+                  href='/about'
+                  text={'About Me'}
+                  textDecoration={
+                    isCurrentHref(path.asPath, '/about') ? 'underline' : ''
+                  }
+                >
                   About Me
                 </MenuItem>
               </MenuList>
@@ -176,3 +207,5 @@ const Navbar: React.FC<Navbar> = props => {
 }
 
 export default Navbar
+
+const isCurrentHref = (href, path) => path === href
