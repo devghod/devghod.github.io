@@ -1,11 +1,16 @@
+import fluid, { extract } from 'fluid-tailwind'
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  darkMode: 'selector',
+  content: {
+    files: [
+      './app/**/*.{js,ts,jsx,tsx,mdx}',
+      './pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './components/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
+    extract,
+  },
   theme: {
     extend: {},
     fontFamily: {
@@ -14,5 +19,5 @@ module.exports = {
       work: ['Work Sans', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [fluid],
 }

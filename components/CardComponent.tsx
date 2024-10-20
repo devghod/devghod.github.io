@@ -46,7 +46,7 @@ const CardComponent = (props: CardComponent) => {
         transition='box-shadow 0.5s ease-in'
       >
         <CardBody>
-          <Text as={'b'} fontSize={'lg'}>
+          <Text fontWeight={'semibold'} letterSpacing={'wide'}>
             <Box>
               {company}
               {short != '' ? ` (${short}) ` : ' '}
@@ -56,7 +56,7 @@ const CardComponent = (props: CardComponent) => {
           <Box display={'flex'}>
             <Text
               fontSize={'sm'}
-              as={'b'}
+              fontWeight={'semibold'}
               mb={2}
               mr={2}
               textColor={colorMode === 'dark' ? 'gray.400' : 'gray.500'}

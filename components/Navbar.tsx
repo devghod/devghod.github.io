@@ -36,7 +36,7 @@ const LinkItem = ({ href, path, target, children, ...props }: any) => {
     <motion.div whileHover={{ scale: 1.1 }}>
       <Link
         fontSize={'sm'}
-        fontWeight={active ? 'black' : 'normal'}
+        fontWeight={active ? 'bold' : 'normal'}
         as={NextLink}
         href={href}
         scroll={false}
@@ -69,7 +69,7 @@ MenuLink.displayName = ''
 const Navbar: React.FC<Navbar> = props => {
   const { path } = props
   const { colorMode } = useColorMode()
-  const activeColor = useColorModeValue('#383838', '#cbcbcb')
+  // const activeColor = useColorModeValue('#383838', '#cbcbcb')
 
   return (
     <Box
@@ -160,9 +160,7 @@ const Navbar: React.FC<Navbar> = props => {
                   href='/'
                   text={'Introduction'}
                   textDecoration={
-                    isCurrentHref(path.asPath, '/')
-                      ? 'underline'
-                      : ''
+                    isCurrentHref(path.asPath, '/') ? 'underline' : ''
                   }
                 >
                   Introduction

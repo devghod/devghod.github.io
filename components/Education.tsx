@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Heading } from '@chakra-ui/react'
 import { User as user } from '../constant/_data'
-import { Secondary, Tertiary } from './Font.style'
 import { useColorMode } from '@chakra-ui/react'
 
 export type Education = {}
@@ -27,14 +26,22 @@ const Education: React.FC<Education> = () => {
             md: 10,
             sm: 0,
           }}
-          bgColor={colorMode === 'dark' ? 'blackAlpha.500' : 'blackAlpha.100'}
+          backgroundColor={colorMode === 'dark' ? 'gray.900' : 'gray.100'}
           p={5}
           borderRadius={'lg'}
+          borderWidth={1}
+          borderColor={colorMode === 'dark' ? 'gray.600' : 'gray.300'}
         >
-          <Secondary text={user.education.college} />
-          <Tertiary
-            text={`${user.education.year} - ${user.education.course} (${user.education.short})`}
-          />
+          <div className='leading-loose'>
+            <div
+              className={`font-semibold text-lg ${colorMode === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}
+            >
+              {`${user.education.college} (${user.education.year})`}
+            </div>
+            <div className='text-gray-500 dark:text-gray-800'>
+              {`${user.education.course} (${user.education.short})`}
+            </div>
+          </div>
         </Box>
       </Box>
     </section>

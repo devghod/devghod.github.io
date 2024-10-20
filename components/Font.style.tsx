@@ -17,7 +17,7 @@ const Primary = ({ text }: any) => (
 )
 
 const Secondary = ({ text }: any) => (
-  <Text mb={2} mr={2} textColor={mode() === 'dark' ? 'gray.300' : 'gray.700'}>
+  <Text mb={2} mr={2} textColor={mode() === 'dark' ? 'gray.400' : 'gray.600'}>
     {text}
   </Text>
 )

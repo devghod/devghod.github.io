@@ -302,7 +302,7 @@ Installed new software and provided assistance for various technical-related con
       image: ched10,
       type: 'project',
       details:
-        'This is the official website for Commission on Higher Education Regional Office 10 (CHED RO 10)',
+        'This is the official website for Commission on Higher Education Regional Office 10 (CHED RO 10).',
       tools: ['Wordpress', 'Website'],
     },
   ],

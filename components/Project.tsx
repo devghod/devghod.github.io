@@ -55,7 +55,11 @@ const Project = (props: Project) => {
           >
             <Box mb={2}>
               <Flex>
-                <Text display={'flex'} fontWeight={'black'}>
+                <Text
+                  display={'flex'}
+                  fontWeight={'semibold'}
+                  letterSpacing={'wide'}
+                >
                   {data.name}
                 </Text>
                 <Spacer />
@@ -69,7 +73,7 @@ const Project = (props: Project) => {
             {data.details != '' && (
               <Box
                 mt={4}
-                p={2}
+                p={5}
                 bg={colorMode === 'dark' ? 'gray.800' : 'gray.200'}
                 borderRadius={'md'}
               >
