@@ -14,14 +14,14 @@ const Intro = () => {
         <div className='grid ~grid-cols-1 gap-x-10 md:grid-cols-5 md:rounded-lg'>
           <div className='~col-span-1 md:col-span-2 justify-self-center self-center'>
             <div className={styles.imageContainer}>
-            <Image
-              src={user.profile}
-              priority
-              className={styles.image}
-              // className='shadow rounded-full grayscale transition 0.75s ease-in-out'
-              width={180}
-              alt={`${user.first_name} ${user.last_name}`}
-            />
+              <Image
+                src={user.profile}
+                priority
+                className={styles.image}
+                // className='shadow rounded-full grayscale transition 0.75s ease-in-out'
+                width={180}
+                alt={`${user.first_name} ${user.last_name}`}
+              />
             </div>
           </div>
           <div className='~col-span-1 md:col-span-3 my-7 md:my-4 mx-10 md:mx-2'>
