@@ -1,0 +1,18 @@
+.imageContainer {
+  overflow: hidden; 
+  border-radius: 100px; 
+  transition: box-shadow 0.3s ease; 
+}
+
+.image {
+  transition: filter 0.75s ease; 
+  filter: grayscale(0); 
+}
+
+/* .imageContainer:hover .image {
+  filter: grayscale(100%);
+} */
+
+.imageContainer:hover {
+  box-shadow: 0px 0px 20px 10px rgba(148, 0, 211, 0.7); 
+}

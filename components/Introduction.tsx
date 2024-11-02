@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { User as user } from '../constant/_data'
 import { Box, Link, SlideFade } from '@chakra-ui/react'
 import { useColorMode } from '@chakra-ui/react'
+import styles from '../styles/custom.module.css'
 
 const Intro = () => {
   const { colorMode } = useColorMode()
@@ -12,16 +13,19 @@ const Intro = () => {
       <Box my={100}>
         <div className='grid ~grid-cols-1 gap-x-10 md:grid-cols-5 md:rounded-lg'>
           <div className='~col-span-1 md:col-span-2 justify-self-center self-center'>
+            <div className={styles.imageContainer}>
             <Image
               src={user.profile}
               priority
-              className='shadow rounded-full'
+              className={styles.image}
+              // className='shadow rounded-full grayscale transition 0.75s ease-in-out'
               width={180}
               alt={`${user.first_name} ${user.last_name}`}
             />
+            </div>
           </div>
           <div className='~col-span-1 md:col-span-3 my-7 md:my-4 mx-10 md:mx-2'>
-            <div className='text-5xl tracking-wide font-semibold subpixel-antialiased mb-2'>
+            <div className='text-5xl tracking-wide font-normal subpixel-antialiased mb-2'>
               {`${user.first_name} ${user.last_name}`}
             </div>
             <div className='tracking-wider text-slate-200 text-xs mb-6'>
