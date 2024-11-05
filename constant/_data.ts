@@ -119,7 +119,7 @@ export const User: UserType = {
       short: '',
       position: 'Front End Developer',
       shortPosition: '',
-      dateStarted: '01-11-23',
+      dateStarted: '01-11-22',
       dateEnded: '09-26-24',
       description: `Designed and implemented intuitive UI/UX to create engaging user experiences and responsive web components.
         Developed and integrated new features to enhance application functionality and improve user satisfaction.
