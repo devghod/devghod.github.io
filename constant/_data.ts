@@ -109,8 +109,8 @@ export const User: UserType = {
     { name: 'Prettier', logo: SiPrettier },
     { name: 'Firebase', logo: SiFirebase },
     { name: 'Mongodb', logo: SiMongodb },
-    { name: 'Git', logo: SiFirebase },
-    { name: 'Docker', logo: SiMongodb },
+    { name: 'Git', logo: SiGit },
+    { name: 'Docker', logo: SiDocker },
     { name: 'Mysql', logo: SiMysql },
   ],
   experience: [
