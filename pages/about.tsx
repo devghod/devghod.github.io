@@ -62,19 +62,10 @@ const AboutPage = () => {
           <Box
             borderRadius={'lg'}
             p={5}
-            boxSize={{
-              md: '80%',
-              sm: '100%',
-            }}
+            boxSize={'100%'}
             bg={colorMode === 'dark' ? 'blackAlpha.400' : 'blackAlpha.100'}
           >
-            <SimpleGrid
-              columns={{
-                md: 5,
-                sm: 3,
-              }}
-              spacing={5}
-            >
+            <SimpleGrid columns={{ base: 2, md: 3 }} rowGap={3} columnGap={6}>
               {user.techStack.map((stack, idx) => (
                 <motion.div
                   key={idx}

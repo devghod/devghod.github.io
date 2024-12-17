@@ -112,6 +112,10 @@ export const User: UserType = {
     { name: 'Git', logo: SiGit },
     { name: 'Docker', logo: SiDocker },
     { name: 'Mysql', logo: SiMysql },
+    { name: 'SOLID Principle', logo: undefined },
+    { name: 'KISS Principle', logo: undefined },
+    { name: 'DRY Principle', logo: undefined },
+    { name: 'YAGNI Principle', logo: undefined },
   ],
   experience: [
     {
