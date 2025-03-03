@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Box,
   Heading,
@@ -10,14 +10,14 @@ import {
   SimpleGrid,
   useColorMode,
   Flex,
-} from '@chakra-ui/react'
-import Ninja from '../public/web-app/code_ninja.jpg'
-import { User as user } from '../constant/_data'
-import { motion } from 'framer-motion'
+} from '@chakra-ui/react';
+import Ninja from '../public/web-app/code_ninja.jpg';
+import { User as user } from '../constant/_data';
+import { motion } from 'framer-motion';
 
 const AboutPage = () => {
-  const aboutMe = user.feeds.filter(curr => curr.type === 'info')[0]
-  const { colorMode } = useColorMode()
+  const aboutMe = user.feeds.filter(curr => curr.type === 'info')[0];
+  const { colorMode } = useColorMode();
 
   return (
     <Box>
@@ -97,7 +97,7 @@ const AboutPage = () => {
         </Center>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

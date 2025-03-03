@@ -1,7 +1,7 @@
-import React from 'react'
-import { Box, Heading } from '@chakra-ui/react'
-import { User as user } from '../constant/_data'
-import CardComponent from '../components/CardComponent'
+import React from 'react';
+import { Box, Heading } from '@chakra-ui/react';
+import { User as user } from '../constant/_data';
+import CardComponent from '../components/CardComponent';
 
 const Experience = () => {
   return (
@@ -25,7 +25,7 @@ const Experience = () => {
         </Box>
       </Box>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

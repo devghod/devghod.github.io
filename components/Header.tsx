@@ -1,11 +1,11 @@
-import React from 'react'
-import Head from 'next/head'
-import { User as user } from '../constant/_data'
-import Navbar from './Navbar'
-import { Box } from '@chakra-ui/react'
+import React from 'react';
+import Head from 'next/head';
+import Navbar from './Navbar';
+import { User as user } from '../constant/_data';
+import { Box } from '@chakra-ui/react';
 
 const Header = (props: any) => {
-  const { router } = props
+  const { router } = props;
 
   return (
     <Box as='main' pb={8}>
@@ -19,7 +19,7 @@ const Header = (props: any) => {
       </Head>
       <Navbar path={router} />
     </Box>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

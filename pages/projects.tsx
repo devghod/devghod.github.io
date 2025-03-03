@@ -1,7 +1,7 @@
-import React from 'react'
-import { Box, Heading } from '@chakra-ui/react'
-import { User as user } from '../constant/_data'
-import Project from '../components/Project'
+import React from 'react';
+import { Box, Heading } from '@chakra-ui/react';
+import { User as user } from '../constant/_data';
+import Project from '../components/Project';
 
 const Projects = () => {
   return (
@@ -21,13 +21,13 @@ const Projects = () => {
         <Box>
           {user.feeds.map((data: any, idx: number) => {
             if (data.type.toLowerCase() != 'info') {
-              return <Project key={idx} data={data} />
+              return <Project key={idx} data={data} />;
             }
           })}
         </Box>
       </Box>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

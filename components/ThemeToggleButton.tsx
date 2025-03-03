@@ -1,12 +1,12 @@
-import React from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
-import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { SunIcon, MoonIcon } from '@chakra-ui/icons';
 
-export type ThemeToggleButton = {}
+export type ThemeToggleButton = {};
 
 const ThemeToggleButton: React.FC<ThemeToggleButton> = () => {
-  const { toggleColorMode } = useColorMode()
+  const { toggleColorMode } = useColorMode();
 
   return (
     <AnimatePresence mode='wait' initial={false}>
@@ -44,7 +44,7 @@ const ThemeToggleButton: React.FC<ThemeToggleButton> = () => {
         ></IconButton>
       </motion.div>
     </AnimatePresence>
-  )
-}
+  );
+};
 
-export default ThemeToggleButton
+export default ThemeToggleButton;

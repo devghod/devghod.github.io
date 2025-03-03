@@ -1,12 +1,12 @@
-import profilePic from '../public/Profile.jpg'
-import artemis from '../public/web-app/artemis.png'
-import pbris from '../public/web-app/pbris.png'
-import dentalfast from '../public/web-app/dentalfast.png'
-import qrthis from '../public/web-app/qrthis.png'
-import nxtform from '../public/web-app/nxtform.png'
-import ched10 from '../public/web-app/ched10-website.png'
-import nathan from '../public/web-app/nathanhr.png'
-import linkiden from '../public/linkedin-48.png'
+import profilePic from '../public/Profile.jpg';
+import artemis from '../public/web-app/artemis.png';
+import pbris from '../public/web-app/pbris.png';
+import dentalfast from '../public/web-app/dentalfast.png';
+import qrthis from '../public/web-app/qrthis.png';
+import nxtform from '../public/web-app/nxtform.png';
+import ched10 from '../public/web-app/ched10-website.png';
+import nathan from '../public/web-app/nathanhr.png';
+import linkiden from '../public/linkedin-48.png';
 
 import {
   FaReact,
@@ -16,8 +16,8 @@ import {
   FaNode,
   FaCss3,
   FaHtml5,
-} from 'react-icons/fa'
-import { RiNextjsFill } from 'react-icons/ri'
+} from 'react-icons/fa';
+import { RiNextjsFill } from 'react-icons/ri';
 import {
   SiNuxtdotjs,
   SiTypescript,
@@ -36,17 +36,17 @@ import {
   SiGit,
   SiDocker,
   SiMysql,
-} from 'react-icons/si'
+} from 'react-icons/si';
 
-import { UserType } from '../types/User.type'
-import moment from 'moment'
+import { UserType } from '../types/User.type';
+import moment from 'moment';
 
 const yearsExp = () => {
-  const startDate = moment('2019-07-01', ' YYYY-MM-DD')
-  const endDate = moment()
+  const startDate = moment('2019-07-01', ' YYYY-MM-DD');
+  const endDate = moment();
 
-  return endDate.diff(startDate, 'years')
-}
+  return endDate.diff(startDate, 'years');
+};
 
 export const User: UserType = {
   id: 0,
@@ -310,4 +310,4 @@ Installed new software and provided assistance for various technical-related con
       tools: ['Wordpress', 'Website'],
     },
   ],
-}
+};

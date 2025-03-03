@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Badge,
   Box,
@@ -10,18 +10,18 @@ import {
   Flex,
   Spacer,
   Link,
-} from '@chakra-ui/react'
-import { Tertiary } from './Font.style'
-import { motion } from 'framer-motion'
-import { RiExternalLinkLine } from 'react-icons/ri'
+} from '@chakra-ui/react';
+import { Tertiary } from './Font.style';
+import { motion } from 'framer-motion';
+import { RiExternalLinkLine } from 'react-icons/ri';
 
 export type Project = {
-  data: any
-}
+  data: any;
+};
 
 const Project = (props: Project) => {
-  const { data } = props
-  const { colorMode } = useColorMode()
+  const { data } = props;
+  const { colorMode } = useColorMode();
 
   return (
     <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: '0.5' }}>
@@ -84,13 +84,13 @@ const Project = (props: Project) => {
         </Box>
       </Center>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
 
 const BadgeTools = (data: []) => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
 
   return (
     <Stack direction={'row'}>
@@ -107,8 +107,8 @@ const BadgeTools = (data: []) => {
           </Badge>
         ))}
     </Stack>
-  )
-}
+  );
+};
 
 // "whiteAlpha" | "blackAlpha" | "gray" | "red" | "orange" | "yellow" | "green" | "teal" | "blue" | "cyan" | "purple" | "pink"
 const BadgeColor = (data: string) => {
@@ -129,7 +129,7 @@ const BadgeColor = (data: string) => {
     Wordpress: 'cyan',
     Website: 'orange',
     'Web Application': 'teal',
-  }
+  };
 
-  return colorMap[data] || ''
-}
+  return colorMap[data] || '';
+};

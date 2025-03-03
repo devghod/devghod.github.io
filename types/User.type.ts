@@ -1,57 +1,57 @@
 export type EducationType = {
-  college: string
-  year: string
-  degree: string
-  course: string
-  short: string
-}
+  college: string;
+  year: string;
+  degree: string;
+  course: string;
+  short: string;
+};
 
 export type ExperienceType = {
-  company: string
-  position: string
-  dateStarted: string
-  dateEnded: string
-  short: string
-  shortPosition: string
-  description: string
-  type: string
-}
+  company: string;
+  position: string;
+  dateStarted: string;
+  dateEnded: string;
+  short: string;
+  shortPosition: string;
+  description: string;
+  type: string;
+};
 
 export type TechType = {
-  name: string
+  name: string;
   // logo: React.ReactNode
   // logo: typeof FaReact
   // logo: JSX.Element
-  logo: any
-}
+  logo: any;
+};
 
 export type FeedType = {
-  name: string
-  professions?: string[]
-  url: string
-  image: any
-  type: string
-  details: string
-  tools: string[]
-}
+  name: string;
+  professions?: string[];
+  url: string;
+  image: any;
+  type: string;
+  details: string;
+  tools: string[];
+};
 
 export type UserType = {
-  id: number
-  devName: string
-  first_name: string
-  middle_name: string
-  last_name: string
-  email: string
-  address: object
-  education: EducationType
-  links: object[]
-  profile: any
-  profession: string
-  primary_profession: string
-  secondary_profession: string
-  projects: object[]
-  skills: string[]
-  techStack: TechType[]
-  feeds: FeedType[]
-  experience: ExperienceType[]
-}
+  id: number;
+  devName: string;
+  first_name: string;
+  middle_name: string;
+  last_name: string;
+  email: string;
+  address: object;
+  education: EducationType;
+  links: object[];
+  profile: any;
+  profession: string;
+  primary_profession: string;
+  secondary_profession: string;
+  projects: object[];
+  skills: string[];
+  techStack: TechType[];
+  feeds: FeedType[];
+  experience: ExperienceType[];
+};

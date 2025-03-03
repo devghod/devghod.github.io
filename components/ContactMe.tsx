@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 import {
   Box,
   Heading,
@@ -7,11 +7,11 @@ import {
   Text,
   Center,
   useColorMode,
-} from '@chakra-ui/react'
-import linkiden from '../public/linkedin-48.png'
+} from '@chakra-ui/react';
+import linkiden from '../public/linkedin-48.png';
 
 const ContactMe = () => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
   return (
     <section id='contactme'>
       <Box my={100}>
@@ -57,7 +57,7 @@ const ContactMe = () => {
         </Center>
       </Box>
     </section>
-  )
-}
+  );
+};
 
-export default ContactMe
+export default ContactMe;

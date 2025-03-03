@@ -1,8 +1,8 @@
-import React from 'react'
-import { Heading, Text } from '@chakra-ui/react'
-import { useColorMode } from '@chakra-ui/react'
+import React from 'react';
+import { Heading, Text } from '@chakra-ui/react';
+import { useColorMode } from '@chakra-ui/react';
 
-const mode = () => useColorMode().colorMode
+const mode = () => useColorMode().colorMode;
 
 const Primary = ({ text }: any) => (
   <Heading
@@ -14,13 +14,13 @@ const Primary = ({ text }: any) => (
   >
     {text}
   </Heading>
-)
+);
 
 const Secondary = ({ text }: any) => (
   <Text mb={2} mr={2} textColor={mode() === 'dark' ? 'gray.400' : 'gray.600'}>
     {text}
   </Text>
-)
+);
 
 const Tertiary = ({ text }: any) => (
   <Text
@@ -31,7 +31,7 @@ const Tertiary = ({ text }: any) => (
   >
     {text}
   </Text>
-)
+);
 
 const Quarternary = ({ text }: any) => (
   <Text
@@ -42,6 +42,6 @@ const Quarternary = ({ text }: any) => (
   >
     {text}
   </Text>
-)
+);
 
-export { Primary, Secondary, Tertiary, Quarternary }
+export { Primary, Secondary, Tertiary, Quarternary };

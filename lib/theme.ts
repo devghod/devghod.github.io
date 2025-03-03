@@ -1,5 +1,5 @@
-import { extendTheme } from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
+import { extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
   global: props => ({
@@ -7,7 +7,7 @@ const styles = {
       bg: mode('#F7FAFC', 'gray.800')(props),
     },
   }),
-}
+};
 
 const components = {
   Heading: {
@@ -29,26 +29,26 @@ const components = {
       textUnderlineOffset: 3,
     }),
   },
-}
+};
 
 const fonts = {
   // heading: 'Poppins, serif',
   body: 'Poppins',
   // body: "Open Sans",
   // heading: 'Montserrat, serif',
-}
+};
 
 const colors = {
   grassTeal: '#88ccca',
-}
+};
 
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: true,
   disableTransitionOnChange: false,
   colorMode: 'all 2s ease-in-out',
-}
+};
 
-const theme = extendTheme({ config, styles, components, fonts, colors })
+const theme = extendTheme({ config, styles, components, fonts, colors });
 
-export default theme
+export default theme;

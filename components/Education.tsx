@@ -1,12 +1,12 @@
-import React from 'react'
-import { Box, Heading } from '@chakra-ui/react'
-import { User as user } from '../constant/_data'
-import { useColorMode } from '@chakra-ui/react'
+import React from 'react';
+import { Box, Heading } from '@chakra-ui/react';
+import { User as user } from '../constant/_data';
+import { useColorMode } from '@chakra-ui/react';
 
-export type Education = {}
+export type Education = {};
 
 const Education: React.FC<Education> = () => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
 
   return (
     <section id='education'>
@@ -45,7 +45,7 @@ const Education: React.FC<Education> = () => {
         </Box>
       </Box>
     </section>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

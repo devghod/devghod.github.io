@@ -1,5 +1,10 @@
-import React from 'react'
-import NextLink from 'next/link'
+import React from 'react';
+import NextLink from 'next/link';
+import ThemeToggleButton from './ThemeToggleButton';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import { GiNinjaStar } from 'react-icons/gi';
+import { User as user } from '../constant/_data';
+import { motion } from 'framer-motion';
 import {
   Container,
   Box,
@@ -15,22 +20,17 @@ import {
   useColorModeValue,
   useColorMode,
   Text,
-} from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import { GiNinjaStar } from 'react-icons/gi'
-import ThemeToggleButton from './ThemeToggleButton'
-import { User as user } from '../constant/_data'
-import { motion } from 'framer-motion'
+} from '@chakra-ui/react';
 
 export type Navbar = {
-  path?: any
-}
+  path?: any;
+};
 
 const LinkItem = ({ href, path, target, children, ...props }: any) => {
-  const active = path.asPath === href
-  const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900')
-  const activeColor = useColorModeValue('#000', '#fff')
-  const { colorMode } = useColorMode()
+  const active = path.asPath === href;
+  const inactiveColor = useColorModeValue('gray.900', 'whiteAlpha.900');
+  const activeColor = useColorModeValue('#000', '#fff');
+  const { colorMode } = useColorMode();
 
   return (
     <motion.div whileHover={{ scale: 1.1 }}>
@@ -56,19 +56,19 @@ const LinkItem = ({ href, path, target, children, ...props }: any) => {
         {children}
       </Link>
     </motion.div>
-  )
-}
+  );
+};
 
 const MenuLink = React.forwardRef((props: any, ref: any) => (
   <Link ref={ref} as={NextLink} {...props} />
-))
+));
 
 // Fix Eslint issue for MenuLink displayname not assigned
-MenuLink.displayName = ''
+MenuLink.displayName = '';
 
 const Navbar: React.FC<Navbar> = props => {
-  const { path } = props
-  const { colorMode } = useColorMode()
+  const { path } = props;
+  const { colorMode } = useColorMode();
   // const activeColor = useColorModeValue('#383838', '#cbcbcb')
 
   return (
@@ -114,7 +114,12 @@ const Navbar: React.FC<Navbar> = props => {
               >
                 <GiNinjaStar />
               </motion.div>
-              <Text ml={1} fontSize={'md'} letterSpacing={'widest'}>
+              <Text 
+                ml={1} 
+                fontSize={'sm'} 
+                letterSpacing={'widest'}
+                style={{ textTransform: 'uppercase' }}
+              >
                 {user.devName}
               </Text>
             </Heading>
@@ -201,9 +206,9 @@ const Navbar: React.FC<Navbar> = props => {
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
 
-const isCurrentHref = (href, path) => path === href
+const isCurrentHref = (href, path) => path === href;

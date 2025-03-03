@@ -1,7 +1,7 @@
-import React from 'react'
-import Intro from '../components/Introduction'
-import ContactMe from '../components/ContactMe'
-import Education from '../components/Education'
+import React from 'react';
+import Intro from '../components/Introduction';
+import ContactMe from '../components/ContactMe';
+import Education from '../components/Education';
 
 const Index = () => {
   return (
@@ -10,7 +10,7 @@ const Index = () => {
       <Education />
       <ContactMe />
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

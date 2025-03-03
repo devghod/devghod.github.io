@@ -9,6 +9,6 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: false,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

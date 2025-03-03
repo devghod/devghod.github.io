@@ -1,12 +1,12 @@
-import React from 'react'
-import Image from 'next/image'
-import { User as user } from '../constant/_data'
-import { Box, Link, SlideFade } from '@chakra-ui/react'
-import { useColorMode } from '@chakra-ui/react'
-import styles from '../styles/custom.module.css'
+import React from 'react';
+import Image from 'next/image';
+import { User as user } from '../constant/_data';
+import { Box, Link, SlideFade } from '@chakra-ui/react';
+import { useColorMode } from '@chakra-ui/react';
+import styles from '../styles/custom.module.css';
 
 const Intro = () => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
 
   return (
     <section id='intro'>
@@ -79,7 +79,7 @@ const Intro = () => {
         </div>
       </Box>
     </section>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;

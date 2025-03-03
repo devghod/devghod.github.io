@@ -1,16 +1,16 @@
-import React from 'react'
-import { useColorMode } from '@chakra-ui/react'
+import React from 'react';
+import { useColorMode } from '@chakra-ui/react';
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
 
   return (
     <html lang='en' className={colorMode === 'dark' ? 'dark' : ''}>
       <body>{children}</body>
     </html>
-  )
+  );
 }

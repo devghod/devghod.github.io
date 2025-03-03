@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Badge,
   Box,
@@ -6,19 +6,19 @@ import {
   CardBody,
   Text,
   useColorMode,
-} from '@chakra-ui/react'
-import moment from 'moment'
-import { ExperienceType } from '../types/User.type'
-import { Quarternary } from './Font.style'
-import { motion } from 'framer-motion'
+} from '@chakra-ui/react';
+import moment from 'moment';
+import { ExperienceType } from '../types/User.type';
+import { Quarternary } from './Font.style';
+import { motion } from 'framer-motion';
 
 export type CardComponent = {
-  data: ExperienceType
-}
+  data: ExperienceType;
+};
 
 const CardComponent = (props: CardComponent) => {
-  const { data } = props
-  const { colorMode } = useColorMode()
+  const { data } = props;
+  const { colorMode } = useColorMode();
   const {
     company,
     position,
@@ -28,7 +28,7 @@ const CardComponent = (props: CardComponent) => {
     shortPosition,
     type,
     description,
-  } = data
+  } = data;
 
   return (
     <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: '0.5' }}>
@@ -77,31 +77,31 @@ const CardComponent = (props: CardComponent) => {
         </CardBody>
       </Card>
     </motion.div>
-  )
-}
+  );
+};
 
-export default CardComponent
+export default CardComponent;
 
 const SetType = (data): any => {
-  const type = data.toLowerCase()
+  const type = data.toLowerCase();
   const colorMap = {
     'full-time': 'green',
     contract: 'blue',
     'part-time': 'purple',
-  }
+  };
 
-  let color = colorMap[type] || 'gray'
+  let color = colorMap[type] || 'gray';
 
   return (
     <Badge colorScheme={color} fontSize={'2xs'}>
       {data}
     </Badge>
-  )
-}
+  );
+};
 
 const DateFormat = (start, end): any => {
-  const str = moment(start, 'MM-DD-YY').format('MMMM YYYY')
-  const ends = moment(end, 'MM-DD-YY').format('MMMM YYYY')
+  const str = moment(start, 'MM-DD-YY').format('MMMM YYYY');
+  const ends = moment(end, 'MM-DD-YY').format('MMMM YYYY');
 
-  return `${str} - ${ends}`
-}
+  return `${str} - ${ends}`;
+};

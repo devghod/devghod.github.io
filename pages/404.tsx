@@ -1,5 +1,5 @@
-import React from 'react'
-import NextLink from 'next/link'
+import React from 'react';
+import NextLink from 'next/link';
 import {
   Box,
   Heading,
@@ -7,7 +7,7 @@ import {
   Container,
   Divider,
   Button,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
 const NotFound = () => {
   return (
@@ -21,7 +21,7 @@ const NotFound = () => {
         </Button>
       </Box>
     </Container>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

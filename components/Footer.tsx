@@ -1,13 +1,13 @@
-import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
-import { User as user } from '../constant/_data'
-import moment from 'moment'
-import { RiNextjsFill } from 'react-icons/ri'
-import { IoLogoVercel } from 'react-icons/io5'
-import { SiChakraui } from 'react-icons/si'
+import React from 'react';
+import { Box, Text } from '@chakra-ui/react';
+import { User as user } from '../constant/_data';
+import moment from 'moment';
+import { RiNextjsFill } from 'react-icons/ri';
+import { IoLogoVercel } from 'react-icons/io5';
+import { SiChakraui } from 'react-icons/si';
 
 const Footer = () => {
-  const year = moment().year()
+  const year = moment().year();
 
   return (
     <footer className='mx-auto text-center'>
@@ -33,7 +33,7 @@ const Footer = () => {
         </Text>
       </Box>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
