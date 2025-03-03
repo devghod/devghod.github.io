@@ -36,7 +36,7 @@ const LinkItem = ({ href, path, target, children, ...props }: any) => {
     <motion.div whileHover={{ scale: 1.1 }}>
       <Link
         fontSize={'sm'}
-        fontWeight={active ? 'bold' : 'normal'}
+        fontWeight={active ? 'semibold' : 'normal'}
         as={NextLink}
         href={href}
         scroll={false}
@@ -114,9 +114,9 @@ const Navbar: React.FC<Navbar> = props => {
               >
                 <GiNinjaStar />
               </motion.div>
-              <Text 
-                ml={1} 
-                fontSize={'sm'} 
+              <Text
+                ml={1}
+                fontSize={'sm'}
                 letterSpacing={'widest'}
                 style={{ textTransform: 'uppercase' }}
               >

@@ -44,7 +44,7 @@ const Project = (props: Project) => {
             objectFit='cover'
             src={data.image.src}
             alt={`${data.name}`}
-            fallbackSrc='https://via.placeholder.com/150'
+            // fallbackSrc='https://picsum.photos/id/237/200/300'
           />
           <Box
             px={3}
